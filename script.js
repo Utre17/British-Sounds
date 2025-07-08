@@ -81,7 +81,7 @@ audioMap['light'] = ['light']; // Now using actual light.mp3 file
 // Scenario practice audio - using actual uploaded files with descriptive names
 audioMap['business-th-1'] = ['I think we should meet at three o\'clock']; // Using actual uploaded file
 audioMap['business-th-2'] = ['We need to think through this strategy more thoroughly']; // Using actual uploaded file
-audioMap['tourist-vw-1'] = ['Take the vest exit and you\'ll see a vine shop']; // Original audio file - sentence updated for available clickable words
+audioMap['tourist-vw-1'] = ['Take the west exit and you\'ll see a wine shop.']; // Updated audio file for V/W practice
 audioMap['tourist-vw-2'] = ['Go west on the wide avenue']; // Using actual uploaded file
 audioMap['emergency-rl-1'] = ['Turn right at the red sign']; // Using actual uploaded file
 audioMap['emergency-rl-2'] = ['The light is left of the door']; // Using actual uploaded file
