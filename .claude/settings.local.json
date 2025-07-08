@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rg:*)",
+      "Bash(for:*)",
+      "Bash(do if [ -f \"audio/session1/$file.mp3\" ])",
+      "Bash(then echo \"✓ $file.mp3\")",
+      "Bash(else echo \"✗ Missing $file.mp3\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(sed:*)",
+      "Bash(mv:*)",
+      "Bash(grep:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git config:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": []
+  }
+}

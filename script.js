@@ -81,7 +81,7 @@ audioMap['light'] = ['light']; // Now using actual light.mp3 file
 // Scenario practice audio - using actual uploaded files with descriptive names
 audioMap['business-th-1'] = ['I think we should meet at three o\'clock']; // Using actual uploaded file
 audioMap['business-th-2'] = ['We need to think through this strategy more thoroughly']; // Using actual uploaded file
-audioMap['tourist-vw-1'] = ['Take the vest exit and you\'ll see a vine shop']; // Using actual uploaded file
+audioMap['tourist-vw-1'] = ['Take the vest exit and you\'ll see a vine shop']; // Original audio file - sentence updated for available clickable words
 audioMap['tourist-vw-2'] = ['Go west on the wide avenue']; // Using actual uploaded file
 audioMap['emergency-rl-1'] = ['Turn right at the red sign']; // Using actual uploaded file
 audioMap['emergency-rl-2'] = ['The light is left of the door']; // Using actual uploaded file
@@ -158,9 +158,15 @@ function initializeLearningSystem() {
     // Bind clickable word events
     bindClickableWords();
     
+    // Bind tab switching events
+    bindTabSwitching();
+    
     // Initialize progress display for both sessions
     updateProgressDisplay('session1');
     updateProgressDisplay('session2');
+    
+    // Show Session 1 progress by default
+    showSessionProgress('session1');
     
     console.log('Focus-First Learning System initialized');
 }
@@ -170,11 +176,26 @@ function bindAudioEvents() {
     const session1VowelButtons = document.querySelectorAll('#session1 .listen-btn.primary');
     session1VowelButtons.forEach(button => {
         button.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio-id');
             const card = this.closest('.learning-card');
             const itemNumber = parseInt(card.getAttribute('data-item'));
             
-            markItemCompleted(card, itemNumber, 'session1', 1);
-            updateStepProgress('session1', 1, itemNumber);
+            // Add loading state
+            this.classList.add('loading');
+            this.querySelector('.btn-text').textContent = 'Playing...';
+            
+            // Play audio
+            playAudioWithFeedback(audioId, this, () => {
+                // Mark as completed
+                markItemCompleted(card, itemNumber, 'session1', 1);
+                
+                // Reset button state
+                this.classList.remove('loading');
+                this.querySelector('.btn-text').textContent = 'Listen & Practice';
+                
+                // Update progress
+                updateStepProgress('session1', 1, itemNumber);
+            });
         });
     });
 
@@ -184,10 +205,11 @@ function bindAudioEvents() {
         const itemNumber = parseInt(card.getAttribute('data-item'));
         const selectInputs = card.querySelectorAll('.word-choice');
         let completedSelects = 0;
+        let cardCompleted = false;
         
         selectInputs.forEach(select => {
             select.addEventListener('change', function() {
-                if (this.value === this.getAttribute('data-correct')) {
+                if (this.value === this.getAttribute('data-correct') && !this.classList.contains('correct')) {
                     this.classList.add('correct');
                     const feedbackIcon = this.parentElement.querySelector('.feedback-icon');
                     if (feedbackIcon) {
@@ -197,10 +219,22 @@ function bindAudioEvents() {
                     }
                     
                     completedSelects++;
-                    if (completedSelects >= selectInputs.length) {
+                    
+                    // Check if all selects in this card are completed
+                    if (completedSelects >= selectInputs.length && !cardCompleted) {
+                        cardCompleted = true;
                         markItemCompleted(card, itemNumber, 'session1', 2);
                         updateStepProgress('session1', 2, itemNumber);
                     }
+                } else if (this.value !== this.getAttribute('data-correct') && this.classList.contains('correct')) {
+                    // Handle case where user changes from correct to incorrect
+                    this.classList.remove('correct');
+                    const feedbackIcon = this.parentElement.querySelector('.feedback-icon');
+                    if (feedbackIcon) {
+                        feedbackIcon.hidden = true;
+                    }
+                    completedSelects = Math.max(0, completedSelects - 1);
+                    cardCompleted = false;
                 }
             });
         });
@@ -210,11 +244,26 @@ function bindAudioEvents() {
     const session1SentenceButtons = document.querySelectorAll('#session1 .listen-btn.sentence-play');
     session1SentenceButtons.forEach(button => {
         button.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio-id');
             const card = this.closest('.sentence-card');
             const itemNumber = parseInt(card.getAttribute('data-item'));
             
-            markItemCompleted(card, itemNumber, 'session1', 3);
-            updateStepProgress('session1', 3, itemNumber);
+            // Add loading state
+            this.classList.add('loading');
+            this.querySelector('.btn-text').textContent = 'Playing...';
+            
+            // Play audio
+            playAudioWithFeedback(audioId, this, () => {
+                // Mark as completed
+                markItemCompleted(card, itemNumber, 'session1', 3);
+                
+                // Reset button state
+                this.classList.remove('loading');
+                this.querySelector('.btn-text').textContent = 'Listen & Repeat';
+                
+                // Update progress
+                updateStepProgress('session1', 3, itemNumber);
+            });
         });
     });
 
@@ -290,6 +339,47 @@ function bindSecondaryActions() {
             toggleExampleSection(target);
         });
     });
+}
+
+function bindTabSwitching() {
+    // Bind tab button events
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetSession = this.getAttribute('data-tab');
+            
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            this.classList.add('active');
+            const targetContent = document.getElementById(targetSession);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+            
+            // Show appropriate progress bar
+            showSessionProgress(targetSession);
+        });
+    });
+}
+
+function showSessionProgress(sessionId) {
+    // Hide all progress bars first
+    const allProgressBars = document.querySelectorAll('.learning-progress');
+    allProgressBars.forEach(bar => {
+        bar.style.display = 'none';
+    });
+    
+    // Show the progress bar for the current session
+    const currentSessionElement = document.querySelector(`#${sessionId}`);
+    if (currentSessionElement) {
+        const progressBar = currentSessionElement.querySelector('.learning-progress');
+        if (progressBar) {
+            progressBar.style.display = 'block';
+        }
+    }
 }
 
 function bindClickableWords() {
@@ -433,15 +523,27 @@ function updateProgressDisplay(session) {
             completionRateElement.textContent = `${completionPercentage}% Complete`;
         }
         
-        // Update current step display
+        // Update current step display - show the active step, not just completed
         let currentStep = 1;
-        if (sessionProgress.step1.completed === sessionProgress.step1.total) currentStep = 2;
-        if (sessionProgress.step2.completed === sessionProgress.step2.total) currentStep = 3;
+        if (sessionProgress.step1.completed === sessionProgress.step1.total && sessionProgress.step2.completed < sessionProgress.step2.total) {
+            currentStep = 2;
+        } else if (sessionProgress.step2.completed === sessionProgress.step2.total && sessionProgress.step3.completed < sessionProgress.step3.total) {
+            currentStep = 3;
+        } else if (sessionProgress.step3.completed === sessionProgress.step3.total) {
+            currentStep = 3; // Keep at 3 when all complete
+        } else if (sessionProgress.step1.completed > 0 && sessionProgress.step1.completed < sessionProgress.step1.total) {
+            currentStep = 1; // Still on step 1
+        } else if (sessionProgress.step2.completed > 0 && sessionProgress.step2.completed < sessionProgress.step2.total) {
+            currentStep = 2; // Still on step 2
+        } else if (sessionProgress.step3.completed > 0) {
+            currentStep = 3; // On step 3
+        }
         
         const currentStepElement = sessionElement.querySelector('.current-step');
         if (currentStepElement) {
             if (session === 'session1') {
-                currentStepElement.textContent = `Step ${currentStep} of 3`;
+                const stepNames = ['Vowel Pairs', 'Interactive Practice', 'Sentence Practice'];
+                currentStepElement.textContent = `${stepNames[currentStep - 1]} (${currentStep} of 3)`;
             } else if (session === 'session2') {
                 const stepNames = ['The Problem', 'The Solution', 'Real Scenarios'];
                 currentStepElement.textContent = `${stepNames[currentStep - 1]} (${currentStep} of 3)`;
@@ -1301,7 +1403,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const total = tabContents.length;
         const completed = completedTabs.size;
         const percent = Math.round((completed / total) * 100);
-        progressFill.style.width = percent + '%';
+        if (progressFill) {
+            progressFill.style.width = percent + '%';
+        }
     }
 
     function toggleIPA() {
@@ -1317,7 +1421,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function resetProgress() {
         completedTabs.clear();
-        progressFill.style.width = '0%';
+        if (progressFill) {
+            progressFill.style.width = '0%';
+        }
         // Optionally reset active tab to first
         tabBtns.forEach(b => b.classList.remove('active'));
         tabContents.forEach(tc => tc.classList.remove('active'));
@@ -1510,4 +1616,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     // Initialize score display
     updateMpScore();
+
+    // --- Scroll to Top Button functionality ---
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    if (scrollToTopBtn) {
+        console.log('Scroll to top button found');
+        
+        // Show/hide scroll to top button based on scroll position
+        function toggleScrollButton() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        }
+
+        // Smooth scroll to top when button is clicked
+        function scrollToTop() {
+            console.log('Scroll to top clicked');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Event listeners for scroll button
+        window.addEventListener('scroll', toggleScrollButton);
+        scrollToTopBtn.addEventListener('click', scrollToTop);
+
+        // Initial check on page load
+        toggleScrollButton();
+    } else {
+        console.error('Scroll to top button not found');
+    }
 }); 
