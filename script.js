@@ -87,6 +87,121 @@ audioMap['emergency-rl-1'] = ['Turn right at the red sign']; // Using actual upl
 audioMap['emergency-rl-2'] = ['The light is left of the door']; // Using actual uploaded file
 audioMap['master-scenario'] = ['I think you should turn right and go west at the red light']; // Using actual uploaded file
 
+// --- Audio mapping for Session 3: Word Stress ---
+// Step 1: Stress Pattern Recognition
+audioMap['present-stress'] = ['present-noun', 'present-verb']; // PRE-sent vs pre-SENT
+audioMap['photograph-stress'] = ['photograph', 'photography']; // PHO-to-graph vs pho-TOG-ra-phy
+audioMap['compound-stress'] = ['blackbird', 'black-bird']; // BLACKbird vs black BIRD
+
+// Step 2: Interactive Practice
+audioMap['important-stress'] = ['important']; // im-POR-tant stress identification
+audioMap['sentence-stress-1'] = ['The photograph showed excellent photography..']; // Sentence stress practice
+
+// Step 3: Professional Context
+audioMap['business-stress'] = ['It\'s important to develop a comprehensive strategy for economic growth']; // Business context
+audioMap['academic-stress'] = ['The university offers opportunities in photography and psychology']; // Academic context  
+audioMap['daily-stress'] = ['I need to record this record and present it as a present']; // Daily life context
+audioMap['development-stress'] = ['development']; // Development stress
+audioMap['education-stress'] = ['education']; // Education stress
+audioMap['machine-stress'] = ['machine-stress']; // Machine stress (if file exists)
+audioMap['happy-stress'] = ['happy-stress']; // Happy stress (if file exists)
+audioMap['complete-stress'] = ['complete-stress']; // Complete stress (if file exists)
+audioMap['butter-stress'] = ['butter-stress']; // Butter stress (if file exists)
+
+// --- Audio mapping for Session 4: Intonation & Emotion ---
+// Step 1: Emotion Wheel - Individual emotions
+audioMap['emotion-happy'] = ['That\'s wonderful news!']; // Happy emotion with rising intonation
+audioMap['emotion-excited'] = ['I can\'t believe it!']; // Excited emotion with high-rise intonation
+audioMap['emotion-curious'] = ['What do you think?']; // Curious emotion with rising intonation
+audioMap['emotion-confident'] = ['I know exactly what to do.']; // Confident emotion with falling intonation
+audioMap['emotion-disappointed'] = ['This isn\'t what I expected.']; // Disappointed emotion with low-fall intonation
+audioMap['emotion-surprised'] = ['Really? That\'s amazing!']; // Surprised emotion with rise-fall intonation
+
+// Step 2: Situation Matcher - Context-based audio
+audioMap['situation-job-interview'] = ['I\'m very interested in this position.']; // Confident, professional tone
+audioMap['situation-first-date'] = ['Tell me about yourself.']; // Curious, warm tone
+audioMap['situation-family-dinner'] = ['How was your day?']; // Warm, caring tone
+audioMap['situation-customer-complaint'] = ['I understand your frustration.']; // Empathetic, calm tone
+audioMap['situation-celebration'] = ['Congratulations! Well done!']; // Excited, enthusiastic tone
+audioMap['situation-apology'] = ['I\'m really sorry about that.']; // Sincere, apologetic tone
+
+// Step 3: Conversation Builder - Scenario-based audio
+audioMap['conversation-restaurant-1'] = ['I know, right?']; // Agreeing with enthusiasm
+audioMap['conversation-restaurant-2'] = ['Could we have a few more minutes?']; // Polite request
+audioMap['conversation-workplace-1'] = ['That sounds like a great idea.']; // Professional agreement
+audioMap['conversation-workplace-2'] = ['Would you mind if I made a suggestion?']; // Polite professional tone
+audioMap['conversation-social-1'] = ['Thanks for inviting me!']; // Grateful, warm tone
+audioMap['conversation-social-2'] = ['I had such a wonderful time.']; // Expressing genuine pleasure
+
+// Step 4: Tone Theater - Character-based audio
+audioMap['character-teacher-1'] = ['That\'s absolutely brilliant!']; // Enthusiastic teacher praise
+audioMap['character-teacher-2'] = ['Now this is the really exciting part!']; // Enthusiastic explanation
+audioMap['character-customer-1'] = ['This is taking far too long!']; // Frustrated complaint
+audioMap['character-customer-2'] = ['I want my money back.']; // Firm demand
+audioMap['character-child-1'] = ['Is that really a real giraffe?']; // Amazed child question
+audioMap['character-child-2'] = ['Can we have cake now?']; // Pleading child request
+audioMap['character-counselor-1'] = ['Everything is going to be alright.']; // Soothing reassurance
+audioMap['character-counselor-2'] = ['You\'re stronger than you think.']; // Encouraging support
+
+
+// --- Audio mapping for Session 4: Intonation ---
+// Step 1: Tone Awareness
+audioMap['statement-question'] = ['You\'re going', 'You\'re going?']; // Statement vs question patterns
+audioMap['wh-questions'] = ['What time?', 'What time.']; // Wh-question polite vs direct
+audioMap['emotion-attitude'] = ['Really', 'Really']; // Emotional intonation variations
+
+// Step 2: Emotional Context  
+audioMap['excited-response'] = ['excited-response']; // Excited emotional response
+audioMap['supportive-response'] = ['supportive-response']; // Supportive emotional response
+audioMap['curious-response'] = ['curious-response']; // Curious emotional response
+
+// Step 3: Conversational Flow
+audioMap['business-conversation'] = ['business-conversation']; // Business meeting flow
+audioMap['social-conversation'] = ['social-conversation']; // Social conversation flow
+audioMap['service-conversation'] = ['service-conversation']; // Customer service flow
+
+// Enhanced Session 4 audio mapping
+// Emotion Wheel audio
+audioMap['emotion-happy'] = ['emotion-happy']; // Happy emotion example
+audioMap['emotion-excited'] = ['emotion-excited']; // Excited emotion example
+audioMap['emotion-curious'] = ['emotion-curious']; // Curious emotion example
+audioMap['emotion-confident'] = ['emotion-confident']; // Confident emotion example
+audioMap['emotion-disappointed'] = ['emotion-disappointed']; // Disappointed emotion example
+audioMap['emotion-surprised'] = ['emotion-surprised']; // Surprised emotion example
+
+// --- Audio mapping for Session 5: Connected Speech ---
+// Step 1: Linking Rules
+audioMap['consonant-vowel-linking'] = ['turn off', 'turn_off']; // Consonant to vowel linking
+audioMap['vowel-vowel-linking'] = ['go out', 'go_out']; // Vowel to vowel linking with intrusive sounds
+audioMap['reductions'] = ['want to', 'wanna']; // Word reductions in natural speech
+
+// Step 2: Speed Building
+audioMap['phrase-slow'] = ['phrase-slow']; // Slow speed practice
+audioMap['phrase-normal'] = ['phrase-normal']; // Normal speed with reductions
+audioMap['phrase-fast'] = ['phrase-fast']; // Fast natural speech
+audioMap['rhythm-chunks'] = ['rhythm-chunks']; // Rhythm chunk practice
+audioMap['flow-passage'] = ['flow-passage']; // Extended passage
+
+// Step 3: Natural Conversation
+audioMap['casual-conversation'] = ['casual-conversation']; // Casual conversation flow
+audioMap['phone-conversation'] = ['phone-conversation']; // Phone conversation flow
+audioMap['storytelling-conversation'] = ['storytelling-conversation']; // Storytelling conversation flow
+
+// --- Audio mapping for Session 6: Final Assessment ---
+// Step 1: Diagnostic Review
+audioMap['vowel-assessment-1'] = ['bit', 'beat']; // Vowel assessment test audio
+audioMap['integration-assessment'] = ['integration-assessment']; // Business presentation excerpt for assessment
+
+// Step 2: Personalized Practice
+audioMap['presentation-challenge'] = ['presentation-challenge']; // Business presentation challenge
+audioMap['social-challenge'] = ['social-challenge']; // Social dinner challenge
+audioMap['model-sentence'] = ['model-sentence']; // Model sentence for self-assessment
+
+// Step 3: Mastery Validation
+audioMap['professional-mastery'] = ['professional-mastery']; // Executive presentation mastery
+audioMap['social-mastery'] = ['social-mastery']; // Social hosting mastery
+audioMap['teaching-mastery'] = ['teaching-mastery']; // Teaching excellence mastery
+
 function playAudio(audioId, btn) {
     console.log('playAudio called with', audioId);
     const session2Ids = [
@@ -97,27 +212,152 @@ function playAudio(audioId, btn) {
         'business-th-1', 'business-th-2', 'tourist-vw-1', 'tourist-vw-2',
         'emergency-rl-1', 'emergency-rl-2', 'master-scenario'
     ];
+    const session3Ids = [
+        'present-stress', 'photograph-stress', 'compound-stress',
+        'important-stress', 'sentence-stress-1',
+        'business-stress', 'academic-stress', 'daily-stress',
+        'development-stress', 'education-stress', 'machine-stress',
+        'happy-stress', 'complete-stress', 'butter-stress'
+    ];
+    const session4Ids = [
+        'statement-question', 'wh-questions', 'emotion-attitude',
+        'excited-response', 'supportive-response', 'curious-response',
+        'business-conversation', 'social-conversation', 'service-conversation',
+        'emotion-happy', 'emotion-excited', 'emotion-curious',
+        'emotion-confident', 'emotion-disappointed', 'emotion-surprised'
+    ];
+    const session5Ids = [
+        'consonant-vowel-linking', 'vowel-vowel-linking', 'reductions',
+        'phrase-slow', 'phrase-normal', 'phrase-fast', 'rhythm-chunks', 'flow-passage',
+        'casual-conversation', 'phone-conversation', 'storytelling-conversation'
+    ];
+    const session6Ids = [
+        'vowel-assessment-1', 'integration-assessment',
+        'presentation-challenge', 'social-challenge', 'model-sentence',
+        'professional-mastery', 'social-mastery', 'teaching-mastery'
+    ];
     const words = audioMap[audioId] || [audioId];
     let idx = 0;
     function playNext() {
         if (idx >= words.length) return;
         const word = words[idx];
-        let fileName = word + '.mp3';
+        // Handle special cases for files with periods in the name
+        let fileName;
+        if (word === 'The photograph showed excellent photography..') {
+            fileName = 'The photograph showed excellent photography..mp3';
+        } else if (word === 'It\'s important to develop a comprehensive strategy for economic growth') {
+            fileName = 'It\'s important to develop a comprehensive strategy for economic growth.mp3';
+        } else if (word === 'The university offers opportunities in photography and psychology') {
+            fileName = 'The university offers opportunities in photography and psychology.mp3';
+        } else if (word === 'I need to record this record and present it as a present') {
+            fileName = 'I need to record this record and present it as a present.mp3';
+        } else {
+            fileName = word + '.mp3';
+        }
         let audioPath = 'audio/session1/';
         if (session2Ids.includes(audioId) || session2Ids.includes(word)) {
             audioPath = 'audio/session2/';
+        } else if (session3Ids.includes(audioId) || session3Ids.includes(word)) {
+            audioPath = 'audio/session3/';
+            console.log('Session 3 audio detected:', audioId, word, fileName);
+        } else if (session4Ids.includes(audioId) || session4Ids.includes(word)) {
+            audioPath = 'audio/session4/';
+        } else if (session5Ids.includes(audioId) || session5Ids.includes(word)) {
+            audioPath = 'audio/session5/';
+        } else if (session6Ids.includes(audioId) || session6Ids.includes(word)) {
+            audioPath = 'audio/session6/';
         }
         const audio = new Audio(`${audioPath}${fileName}`);
+        
+        // Enhanced audio feedback
         audio.onerror = function() {
-            showModal('Audio Error', `Audio file not found: ${audioPath}${fileName}`, 'error');
-        };
-        audio.onended = function() {
+            console.warn(`Audio file not found: ${audioPath}${fileName}`);
+            
+            // Show user-friendly feedback instead of modal
+            if (btn) {
+                showAudioFeedback(btn, 'Audio not available in demo version', 'info');
+            }
+            
+            // Continue to next audio if available
             idx++;
             playNext();
         };
-        audio.play();
+        
+        audio.onloadstart = function() {
+            if (btn) {
+                btn.classList.add('loading');
+                showAudioFeedback(btn, 'Loading audio...', 'loading');
+            }
+        };
+        
+        audio.oncanplaythrough = function() {
+            if (btn) {
+                showAudioFeedback(btn, 'Playing audio', 'success');
+            }
+        };
+        
+        audio.onended = function() {
+            if (btn) {
+                btn.classList.remove('loading');
+                showAudioFeedback(btn, 'Audio complete', 'success');
+            }
+            idx++;
+            playNext();
+        };
+        
+        audio.play().catch(error => {
+            console.error('Audio play failed:', error);
+            if (btn) {
+                showAudioFeedback(btn, 'Audio play failed', 'error');
+            }
+        });
     }
     playNext();
+}
+
+function showAudioFeedback(button, message, type) {
+    // Create or update feedback element
+    let feedback = button.parentElement.querySelector('.audio-feedback');
+    if (!feedback) {
+        feedback = document.createElement('div');
+        feedback.className = 'audio-feedback';
+        button.parentElement.appendChild(feedback);
+    }
+    
+    feedback.textContent = message;
+    feedback.className = `audio-feedback ${type}`;
+    feedback.style.display = 'block';
+    
+    // Auto-hide after 3 seconds for non-error messages
+    if (type !== 'error') {
+        setTimeout(() => {
+            if (feedback && feedback.parentElement) {
+                feedback.style.display = 'none';
+            }
+        }, 3000);
+    }
+}
+
+function createRippleEffect(element) {
+    const ripple = document.createElement('div');
+    ripple.className = 'ripple-effect';
+    
+    const rect = element.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = (rect.width / 2 - size / 2) + 'px';
+    ripple.style.top = (rect.height / 2 - size / 2) + 'px';
+    
+    element.style.position = 'relative';
+    element.appendChild(ripple);
+    
+    // Remove ripple after animation
+    setTimeout(() => {
+        if (ripple.parentNode) {
+            ripple.parentNode.removeChild(ripple);
+        }
+    }, 600);
 }
 
 // Add a global checkQuiz function as a placeholder
@@ -140,6 +380,26 @@ let learningProgress = {
         step1: { completed: 0, total: 3 },  // Problem identification
         step2: { completed: 0, total: 3 },  // Solution techniques
         step3: { completed: 0, total: 4 }   // Real scenarios (3 scenarios + master challenge)
+    },
+    session3: {
+        step1: { completed: 0, total: 3 },  // Stress pattern recognition (present, photograph, compound)
+        step2: { completed: 0, total: 3 },  // Interactive practice (identify, patterns, sentence)
+        step3: { completed: 0, total: 3 }   // Professional context (business, academic, daily)
+    },
+    session4: {
+        step1: { completed: 0, total: 3 },  // Tone awareness (statement-question, wh-questions, emotion-attitude)
+        step2: { completed: 0, total: 3 },  // Emotional context (professional, social, emotional responses)
+        step3: { completed: 0, total: 3 }   // Conversational flow (business, social, service conversations)
+    },
+    session5: {
+        step1: { completed: 0, total: 3 },  // Linking rules (consonant-vowel, vowel-vowel, reductions)
+        step2: { completed: 0, total: 3 },  // Speed building (progressive speed, rhythm chunks, flow challenge)
+        step3: { completed: 0, total: 3 }   // Natural conversation (casual, phone, storytelling)
+    },
+    session6: {
+        step1: { completed: 0, total: 3 },  // Diagnostic review (vowel assessment, consonant assessment, integration assessment)
+        step2: { completed: 0, total: 3 },  // Personalized practice (weakness practice, mixed challenge, self-assessment)
+        step3: { completed: 0, total: 3 }   // Mastery validation (professional, social, teaching mastery)
     }
 };
 
@@ -161,9 +421,10 @@ function initializeLearningSystem() {
     // Bind tab switching events
     bindTabSwitching();
     
-    // Initialize progress display for both sessions
+    // Initialize progress display for all sessions
     updateProgressDisplay('session1');
     updateProgressDisplay('session2');
+    updateProgressDisplay('session3');
     
     // Show Session 1 progress by default
     showSessionProgress('session1');
@@ -182,7 +443,10 @@ function bindAudioEvents() {
             
             // Add loading state
             this.classList.add('loading');
-            this.querySelector('.btn-text').textContent = 'Playing...';
+            const btnTextElement = this.querySelector('.btn-text');
+            if (btnTextElement) {
+                btnTextElement.textContent = 'Playing...';
+            }
             
             // Play audio
             playAudioWithFeedback(audioId, this, () => {
@@ -191,7 +455,9 @@ function bindAudioEvents() {
                 
                 // Reset button state
                 this.classList.remove('loading');
-                this.querySelector('.btn-text').textContent = 'Listen & Practice';
+                if (btnTextElement) {
+                    btnTextElement.textContent = 'Listen & Practice';
+                }
                 
                 // Update progress
                 updateStepProgress('session1', 1, itemNumber);
@@ -250,7 +516,10 @@ function bindAudioEvents() {
             
             // Add loading state
             this.classList.add('loading');
-            this.querySelector('.btn-text').textContent = 'Playing...';
+            const btnTextElement = this.querySelector('.btn-text');
+            if (btnTextElement) {
+                btnTextElement.textContent = 'Playing...';
+            }
             
             // Play audio
             playAudioWithFeedback(audioId, this, () => {
@@ -259,7 +528,9 @@ function bindAudioEvents() {
                 
                 // Reset button state
                 this.classList.remove('loading');
-                this.querySelector('.btn-text').textContent = 'Listen & Repeat';
+                if (btnTextElement) {
+                    btnTextElement.textContent = 'Listen & Repeat';
+                }
                 
                 // Update progress
                 updateStepProgress('session1', 3, itemNumber);
@@ -317,6 +588,131 @@ function bindAudioEvents() {
             
             markItemCompleted(card, itemNumber, 'session2', 3);
             updateStepProgress('session2', 3, itemNumber);
+        });
+    });
+
+    // Session 3: Stress Pattern Recognition (Step 1)
+    const session3StepOneButtons = document.querySelectorAll('#session3 .rhythm-play-btn, #session3 .wave-play-btn, #session3 .listen-btn.primary');
+    session3StepOneButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio-id');
+            const card = this.closest('.learning-card, .rhythm-content, .card-content');
+            let itemNumber = 1; // Default to step 1
+            
+            if (card && card.getAttribute('data-item')) {
+                itemNumber = parseInt(card.getAttribute('data-item'));
+            }
+            
+            console.log('Session 3 Step 1 button clicked:', audioId, itemNumber, 'card:', card);
+            
+            // Add loading state
+            this.classList.add('loading');
+            const btnTextElement = this.querySelector('.btn-text');
+            const originalText = btnTextElement ? btnTextElement.textContent : 'Play';
+            if (btnTextElement) {
+                btnTextElement.textContent = 'Playing...';
+            }
+            
+            // Play audio
+            playAudioWithFeedback(audioId, this, () => {
+                // Mark as completed (only if card exists)
+                if (card) {
+                    markItemCompleted(card, itemNumber, 'session3', 1);
+                }
+                
+                // Reset button state
+                this.classList.remove('loading');
+                if (btnTextElement) {
+                    btnTextElement.textContent = originalText;
+                }
+                
+                // Update progress
+                updateStepProgress('session3', 1, itemNumber);
+            });
+        });
+    });
+
+    // Session 3: Interactive Practice (Step 2)
+    const session3StepTwoButtons = document.querySelectorAll('#session3 .play-word-btn, #session3 .practice-audio');
+    session3StepTwoButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio-id');
+            const card = this.closest('.learning-card, .stress-exercise, .sentence-stress-practice');
+            let itemNumber = 2; // Default to step 2
+            
+            if (card && card.getAttribute('data-item')) {
+                itemNumber = parseInt(card.getAttribute('data-item'));
+            }
+            
+            console.log('Session 3 Step 2 button clicked:', audioId, itemNumber, 'card:', card);
+            
+            // Add loading state (COPIED FROM STEP 1)
+            this.classList.add('loading');
+            const btnTextElement = this.querySelector('.btn-text');
+            const originalText = btnTextElement ? btnTextElement.textContent : 'Play';
+            if (btnTextElement) {
+                btnTextElement.textContent = 'Playing...';
+            }
+            
+            // Play audio (COPIED FROM STEP 1)
+            playAudioWithFeedback(audioId, this, () => {
+                // Mark as completed (only if card exists)
+                if (card) {
+                    markItemCompleted(card, itemNumber, 'session3', 2);
+                }
+                
+                // Reset button state (COPIED FROM STEP 1)
+                this.classList.remove('loading');
+                if (btnTextElement) {
+                    btnTextElement.textContent = originalText;
+                }
+                
+                // Update progress
+                updateStepProgress('session3', 2, itemNumber);
+            });
+        });
+    });
+
+    // Session 3: Professional Context (Step 3)
+    const session3StepThreeButtons = document.querySelectorAll('#session3 .context-audio');
+    console.log('Session 3 Step 3 buttons found:', session3StepThreeButtons.length, session3StepThreeButtons);
+    session3StepThreeButtons.forEach(button => {
+        console.log('Attaching Step 3 event listener to button:', button, button.getAttribute('data-audio-id'));
+        button.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio-id');
+            const card = this.closest('.learning-card, .context-section, .context-content');
+            let itemNumber = 3; // Default to step 3
+            
+            if (card && card.getAttribute('data-item')) {
+                itemNumber = parseInt(card.getAttribute('data-item'));
+            }
+            
+            console.log('Session 3 Step 3 button clicked:', audioId, itemNumber, 'card:', card);
+            
+            // Add loading state (EXACT COPY FROM STEP 1)
+            this.classList.add('loading');
+            const btnTextElement = this.querySelector('.btn-text');
+            const originalText = btnTextElement ? btnTextElement.textContent : 'Play';
+            if (btnTextElement) {
+                btnTextElement.textContent = 'Playing...';
+            }
+            
+            // Play audio (EXACT COPY FROM STEP 1)
+            playAudioWithFeedback(audioId, this, () => {
+                // Mark as completed (only if card exists)
+                if (card) {
+                    markItemCompleted(card, itemNumber, 'session3', 3);
+                }
+                
+                // Reset button state (EXACT COPY FROM STEP 1)
+                this.classList.remove('loading');
+                if (btnTextElement) {
+                    btnTextElement.textContent = originalText;
+                }
+                
+                // Update progress
+                updateStepProgress('session3', 3, itemNumber);
+            });
         });
     });
 }
@@ -422,7 +818,8 @@ function bindClickableWords() {
 
 function playAudioWithFeedback(audioId, button, onComplete) {
     // Use existing playAudio function but with enhanced feedback
-    const originalText = button.querySelector('.btn-text').textContent;
+    const btnTextElement = button.querySelector('.btn-text');
+    const originalText = btnTextElement ? btnTextElement.textContent : 'Play';
     
     try {
         // Call the existing playAudio function
@@ -441,7 +838,9 @@ function playAudioWithFeedback(audioId, button, onComplete) {
         
     } catch (error) {
         console.error('Audio playback error:', error);
-        button.querySelector('.btn-text').textContent = originalText;
+        if (btnTextElement) {
+            btnTextElement.textContent = originalText;
+        }
         button.classList.remove('loading');
     }
 }
@@ -547,6 +946,9 @@ function updateProgressDisplay(session) {
             } else if (session === 'session2') {
                 const stepNames = ['The Problem', 'The Solution', 'Real Scenarios'];
                 currentStepElement.textContent = `${stepNames[currentStep - 1]} (${currentStep} of 3)`;
+            } else if (session === 'session3') {
+                const stepNames = ['Visual Rhythms', 'Interactive Practice', 'Professional Context'];
+                currentStepElement.textContent = `${stepNames[currentStep - 1]} (${currentStep} of 3)`;
             }
         }
     }
@@ -643,7 +1045,10 @@ function initializeSentenceCards() {
             
             // Add playing state
             this.classList.add('playing');
-            this.querySelector('.btn-text').textContent = 'Playing...';
+            const btnTextElement = this.querySelector('.btn-text');
+            if (btnTextElement) {
+                btnTextElement.textContent = 'Playing...';
+            }
             
             // Play audio with enhanced feedback
             playAudioWithFeedback(audioId, button, () => {
@@ -654,7 +1059,9 @@ function initializeSentenceCards() {
                 
                 // Reset button state
                 this.classList.remove('playing');
-                this.querySelector('.btn-text').textContent = 'Listen & Repeat';
+                if (btnTextElement) {
+                    btnTextElement.textContent = 'Listen & Repeat';
+                }
                 
                 // Update step 3 progress
                 updateStepProgress(3, parseInt(card.getAttribute('data-item')));
@@ -719,13 +1126,18 @@ function initializeShadowingControls() {
             if (mode === 'listen') {
                 // Listen first mode
                 this.classList.add('active');
-                this.querySelector('.btn-text').textContent = 'Listening...';
+                const btnTextElement = this.querySelector('.btn-text');
+                if (btnTextElement) {
+                    btnTextElement.textContent = 'Listening...';
+                }
                 
                 playAudio(audioId, button);
                 
                 setTimeout(() => {
                     this.classList.remove('active');
-                    this.querySelector('.btn-text').textContent = 'Listen First';
+                    if (btnTextElement) {
+                        btnTextElement.textContent = 'Listen First';
+                    }
                 }, 3000);
                 
             } else if (mode === 'shadow') {
@@ -817,7 +1229,10 @@ function startShadowingChallenge() {
     const progressText = document.querySelector('.progress-text');
     
     shadowButton.classList.add('active');
-    shadowButton.querySelector('.btn-text').textContent = 'Shadowing...';
+    const shadowBtnTextElement = shadowButton.querySelector('.btn-text');
+    if (shadowBtnTextElement) {
+        shadowBtnTextElement.textContent = 'Shadowing...';
+    }
     
     // Simulate shadowing progress
     let progress = 0;
@@ -842,7 +1257,10 @@ function completeShadowingChallenge() {
     const celebration = document.querySelector('.completion-celebration');
     
     shadowButton.classList.remove('active');
-    shadowButton.querySelector('.btn-text').textContent = 'Shadow Challenge';
+    const shadowBtnTextElement = shadowButton.querySelector('.btn-text');
+    if (shadowBtnTextElement) {
+        shadowBtnTextElement.textContent = 'Shadow Challenge';
+    }
     
     // Show celebration
     celebration.removeAttribute('hidden');
@@ -906,6 +1324,12 @@ function initializeInteractivePractice() {
     
     // Initialize Step 2 practice cards
     initializePracticeCards();
+    
+    // Initialize Session 3 interactive elements
+    initializeSession3Games();
+    
+    // Initialize Session 4 interactive elements
+    initializeSession4Games();
     
     console.log('Interactive practice system initialized');
 }
@@ -1045,30 +1469,1338 @@ function handleDrop(e) {
     this.classList.remove('drag-over');
     
     if (draggedElement) {
-        const targetCategory = this.getAttribute('data-target');
-        const wordCategory = draggedElement.getAttribute('data-sound');
-        
-        // Check if the drop is correct
-        const isCorrect = (targetCategory === wordCategory) || 
-                         (targetCategory === 'central' && wordCategory === 'central') ||
-                         (targetCategory === 'back' && wordCategory === 'back');
-        
-        if (isCorrect) {
-            // Move the word to the drop zone
-            const zoneContent = this.querySelector('.zone-content');
-            zoneContent.appendChild(draggedElement);
-            draggedElement.classList.add('correctly-placed');
-            
-            // Update progress
-            updatePracticeProgress(this.closest('.card-practice'));
-            
-            // Show success feedback
-            showFeedback('Correct! Well done!', 'success');
+        // Check if this is Session 3 stress pattern matching
+        if (this.hasAttribute('data-accepts')) {
+            handleSession3StressPatternDrop(e, this);
         } else {
-            // Show error feedback
-            showFeedback('Not quite right. Try again!', 'error');
+            // Original logic for other sessions
+            const targetCategory = this.getAttribute('data-target');
+            const wordCategory = draggedElement.getAttribute('data-sound');
+            
+            // Check if the drop is correct
+            const isCorrect = (targetCategory === wordCategory) || 
+                             (targetCategory === 'central' && wordCategory === 'central') ||
+                             (targetCategory === 'back' && wordCategory === 'back');
+            
+            if (isCorrect) {
+                // Move the word to the drop zone
+                const zoneContent = this.querySelector('.zone-content');
+                if (zoneContent) {
+                    zoneContent.appendChild(draggedElement);
+                } else {
+                    this.appendChild(draggedElement);
+                }
+                draggedElement.classList.add('correctly-placed');
+                
+                // Update progress
+                updatePracticeProgress(this.closest('.card-practice'));
+                
+                // Show success feedback
+                showFeedback('Correct! Well done!', 'success');
+            } else {
+                // Show error feedback
+                showFeedback('Not quite right. Try again!', 'error');
+            }
         }
     }
+}
+
+function handleSession3StressPatternDrop(e, dropZone) {
+    const acceptedPattern = dropZone.getAttribute('data-accepts');
+    const wordPattern = draggedElement.getAttribute('data-pattern');
+    
+    // Check if word pattern matches the drop zone pattern
+    if (wordPattern === acceptedPattern) {
+        // Move the word to the drop zone
+        dropZone.appendChild(draggedElement);
+        draggedElement.classList.add('correctly-placed');
+        
+        // Visual feedback for correct placement
+        dropZone.classList.add('correct-drop');
+        
+        // Check if Session 3 exercise is complete
+        checkSession3StressPatternCompletion(dropZone.closest('.practice-exercise-card'));
+        
+        // Show success feedback
+        showFeedback(`Correct! "${draggedElement.textContent}" has ${acceptedPattern === '1-2' ? 'weak-STRONG' : 'STRONG-weak'} stress pattern.`, 'success');
+    } else {
+        // Incorrect placement - show error and don't move word
+        dropZone.classList.add('incorrect-drop');
+        
+        // Remove error styling after animation
+        setTimeout(() => {
+            dropZone.classList.remove('incorrect-drop');
+        }, 1000);
+        
+        // Show error feedback with explanation
+        const correctPattern = wordPattern === '1-2' ? 'weak-STRONG' : 'STRONG-weak';
+        showFeedback(`Not quite! "${draggedElement.textContent}" has ${correctPattern} stress pattern.`, 'error');
+    }
+}
+
+function checkSession3StressPatternCompletion(card) {
+    const allDropZones = card.querySelectorAll('.drop-zone');
+    let totalCorrectPlacements = 0;
+    
+    allDropZones.forEach(zone => {
+        const wordsInZone = zone.querySelectorAll('.draggable-word.correctly-placed');
+        totalCorrectPlacements += wordsInZone.length;
+    });
+    
+    // Exercise is complete when all 8 words are correctly placed
+    if (totalCorrectPlacements === 8) {
+        // Mark exercise as completed
+        card.classList.add('completed');
+        
+        // Update status icon
+        const statusIcon = card.querySelector('.status-icon');
+        if (statusIcon) {
+            statusIcon.setAttribute('data-status', 'completed');
+            statusIcon.textContent = '✓';
+        }
+        
+        // Update Session 3 Step 2 progress
+        const itemNumber = parseInt(card.getAttribute('data-item'));
+        markItemCompleted(card, itemNumber, 'session3', 2);
+        updateStepProgress('session3', 2, itemNumber);
+        
+        // Show completion message
+        showFeedback('🎉 Excellent! You\'ve mastered stress pattern matching!', 'success');
+    }
+}
+
+function initializeSession3Games() {
+    // Initialize clapping games
+    initializeClappingGames();
+    
+    // Initialize stress shifter games
+    initializeStressShifterGames();
+    
+    // Initialize syllable clicking
+    initializeSyllableClicking();
+    
+    // Initialize metronome functionality
+    initializeMetronome();
+    
+    // Initialize waveform displays
+    initializeWaveformDisplays();
+    
+    console.log('Session 3 games initialized');
+}
+
+function initializeConversationBuilder() {
+    const scenarioButtons = document.querySelectorAll('.scenario-btn');
+    const conversationCanvas = document.getElementById('conversation-canvas');
+    const conversationScenarios = document.querySelectorAll('.conversation-scenario');
+    
+    let currentScenario = 'restaurant';
+    let completedLines = 0;
+    let totalLines = 0;
+    
+    // Initialize scenario switching
+    scenarioButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const scenario = this.getAttribute('data-scenario');
+            switchScenario(scenario);
+        });
+    });
+    
+    // Initialize response options
+    initializeResponseOptions();
+    
+    function switchScenario(scenario) {
+        currentScenario = scenario;
+        
+        // Update active scenario button
+        scenarioButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-scenario') === scenario) {
+                btn.classList.add('active');
+            }
+        });
+        
+        // Update active scenario content
+        conversationScenarios.forEach(scenarioDiv => {
+            scenarioDiv.classList.remove('active');
+            if (scenarioDiv.getAttribute('data-scenario') === scenario) {
+                scenarioDiv.classList.add('active');
+            }
+        });
+        
+        // Reset progress for new scenario
+        completedLines = 0;
+        updateScenarioProgress();
+        
+        // Re-initialize response options for new scenario
+        initializeResponseOptions();
+    }
+    
+    function initializeResponseOptions() {
+        const activeScenario = document.querySelector('.conversation-scenario.active');
+        if (!activeScenario) return;
+        
+        const responseOptions = activeScenario.querySelectorAll('.response-option');
+        const lineBuilders = activeScenario.querySelectorAll('.line-builder');
+        
+        totalLines = lineBuilders.length;
+        
+        responseOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                handleResponseSelection(this);
+            });
+        });
+    }
+    
+    function handleResponseSelection(selectedOption) {
+        const lineBuilder = selectedOption.closest('.line-builder');
+        const responseOptions = lineBuilder.querySelectorAll('.response-option');
+        const isCorrect = selectedOption.getAttribute('data-correct') === 'true';
+        
+        // Disable all options in this line
+        responseOptions.forEach(option => {
+            option.disabled = true;
+        });
+        
+        // Add visual feedback
+        if (isCorrect) {
+            selectedOption.classList.add('correct');
+            lineBuilder.classList.add('completed');
+            completedLines++;
+            
+            // Play success sound effect
+            createRippleEffect(selectedOption);
+            
+            // Show correct feedback
+            showConversationFeedback(selectedOption, 'Perfect! That tone matches the context beautifully.', 'success');
+        } else {
+            selectedOption.classList.add('incorrect');
+            
+            // Highlight correct answer
+            const correctOption = lineBuilder.querySelector('.response-option[data-correct="true"]');
+            if (correctOption) {
+                correctOption.classList.add('correct-highlight');
+            }
+            
+            // Show incorrect feedback
+            showConversationFeedback(selectedOption, 'Not quite right. The correct tone is highlighted.', 'error');
+        }
+        
+        // Update progress
+        updateScenarioProgress();
+        
+        // Check if scenario is complete
+        if (completedLines === totalLines) {
+            completeConversationScenario();
+        }
+    }
+    
+    function showConversationFeedback(element, message, type) {
+        const feedback = document.createElement('div');
+        feedback.className = `conversation-feedback ${type}`;
+        feedback.textContent = message;
+        
+        element.parentElement.appendChild(feedback);
+        
+        // Auto-remove feedback after 3 seconds
+        setTimeout(() => {
+            feedback.remove();
+        }, 3000);
+    }
+    
+    function updateScenarioProgress() {
+        const progressText = document.querySelector('.scenario-progress');
+        if (progressText) {
+            progressText.textContent = `${completedLines}/${totalLines} lines completed`;
+        }
+    }
+    
+    function completeConversationScenario() {
+        const activeScenario = document.querySelector('.conversation-scenario.active');
+        if (activeScenario) {
+            activeScenario.classList.add('completed');
+            
+            // Mark step as completed
+            const builderExercise = document.querySelector('.builder-exercise');
+            const itemNumber = parseInt(builderExercise.getAttribute('data-item'));
+            markItemCompleted(builderExercise, itemNumber, 'session4', 3);
+            updateStepProgress('session4', 3, itemNumber);
+            
+            // Show completion feedback
+            const scenarioName = currentScenario.charAt(0).toUpperCase() + currentScenario.slice(1);
+            showModal(`${scenarioName} Conversation Mastered!`, 
+                     `🎉 Excellent! You've mastered the ${scenarioName} scenario. Ready for the final challenge?`, 
+                     'success');
+        }
+    }
+}
+
+function initializeToneTheater() {
+    const characterCards = document.querySelectorAll('.character-card');
+    const theaterStage = document.getElementById('theater-stage');
+    const stageHeader = document.querySelector('.stage-header');
+    const currentCharacterDiv = document.querySelector('.current-character');
+    const scenarioText = document.querySelector('.scenario-text');
+    const lineToPerform = document.querySelector('.line-to-perform');
+    const sceneCounter = document.querySelector('.scene-counter');
+    const recordBtn = document.getElementById('record-performance');
+    const exampleBtn = document.getElementById('hear-example');
+    const performanceFeedback = document.getElementById('performance-feedback');
+    
+    let currentCharacter = null;
+    let currentScene = 1;
+    let completedScenes = 0;
+    const totalScenes = 3;
+    
+    // Character scenarios and lines
+    const characterScenarios = {
+        'enthusiastic-teacher': [
+            {
+                scenario: "You're encouraging a student who got their first A+",
+                line: "That's absolutely brilliant! You should be so proud of yourself!",
+                emotion: "excited",
+                tone: "rising"
+            },
+            {
+                scenario: "You're explaining a difficult concept with enthusiasm",
+                line: "Now this is the really exciting part of the lesson!",
+                emotion: "enthusiastic",
+                tone: "high-rise"
+            },
+            {
+                scenario: "You're praising the class for good work",
+                line: "Everyone did such wonderful work today!",
+                emotion: "proud",
+                tone: "warm-falling"
+            }
+        ],
+        'grumpy-customer': [
+            {
+                scenario: "You're complaining about slow service at a restaurant",
+                line: "This is taking far too long! Where's my order?",
+                emotion: "frustrated",
+                tone: "sharp-fall"
+            },
+            {
+                scenario: "You're returning a faulty product",
+                line: "This doesn't work properly. I want my money back.",
+                emotion: "demanding",
+                tone: "firm-fall"
+            },
+            {
+                scenario: "You're expressing disappointment with poor quality",
+                line: "I expected much better than this for the price.",
+                emotion: "disappointed",
+                tone: "low-fall"
+            }
+        ],
+        'excited-child': [
+            {
+                scenario: "You just saw your favorite animal at the zoo",
+                line: "Look! Look! Is that really a real giraffe?",
+                emotion: "amazed",
+                tone: "high-rise"
+            },
+            {
+                scenario: "You're asking about your birthday party",
+                line: "Can we have cake now? Please? Pretty please?",
+                emotion: "pleading",
+                tone: "rising"
+            },
+            {
+                scenario: "You're telling about something incredible",
+                line: "You'll never believe what happened at school today!",
+                emotion: "excited",
+                tone: "dramatic-rise"
+            }
+        ],
+        'calm-counselor': [
+            {
+                scenario: "You're reassuring someone who's anxious",
+                line: "Take a deep breath. Everything is going to be alright.",
+                emotion: "soothing",
+                tone: "gentle-fall"
+            },
+            {
+                scenario: "You're offering support to someone upset",
+                line: "I can see this is really difficult for you.",
+                emotion: "empathetic",
+                tone: "warm-fall"
+            },
+            {
+                scenario: "You're encouraging someone to try again",
+                line: "You're stronger than you think. You can do this.",
+                emotion: "encouraging",
+                tone: "confident-rise"
+            }
+        ]
+    };
+    
+    // Initialize character selection
+    characterCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const character = this.getAttribute('data-character');
+            selectCharacter(character);
+        });
+    });
+    
+    // Initialize performance buttons
+    if (recordBtn) {
+        recordBtn.addEventListener('click', recordPerformance);
+    }
+    
+    if (exampleBtn) {
+        exampleBtn.addEventListener('click', playExample);
+    }
+    
+    function selectCharacter(characterId) {
+        currentCharacter = characterId;
+        currentScene = 1;
+        completedScenes = 0;
+        
+        // Update character cards
+        characterCards.forEach(card => {
+            card.classList.remove('selected');
+            if (card.getAttribute('data-character') === characterId) {
+                card.classList.add('selected');
+            }
+        });
+        
+        // Show theater stage
+        theaterStage.removeAttribute('hidden');
+        
+        // Load first scene
+        loadScene(1);
+    }
+    
+    function loadScene(sceneNumber) {
+        const scenarios = characterScenarios[currentCharacter];
+        if (!scenarios || sceneNumber > scenarios.length) return;
+        
+        const scenario = scenarios[sceneNumber - 1];
+        
+        // Update character display
+        const characterCard = document.querySelector(`[data-character="${currentCharacter}"]`);
+        const characterName = characterCard.querySelector('.character-name').textContent;
+        const characterAvatar = characterCard.querySelector('.character-avatar').textContent;
+        
+        currentCharacterDiv.innerHTML = `
+            <div class="character-display">
+                <span class="character-avatar">${characterAvatar}</span>
+                <span class="character-name">${characterName}</span>
+            </div>
+        `;
+        
+        // Update scene counter
+        sceneCounter.textContent = `Scene ${sceneNumber} of ${totalScenes}`;
+        
+        // Update scenario and line
+        scenarioText.innerHTML = `<strong>Scenario:</strong> ${scenario.scenario}`;
+        lineToPerform.innerHTML = `<strong>Your line:</strong> "${scenario.line}"`;
+        
+        // Enable buttons
+        recordBtn.disabled = false;
+        exampleBtn.disabled = false;
+        
+        // Clear previous feedback
+        performanceFeedback.setAttribute('hidden', '');
+        performanceFeedback.innerHTML = '';
+    }
+    
+    function recordPerformance() {
+        // Simulate recording feedback
+        const scenario = characterScenarios[currentCharacter][currentScene - 1];
+        
+        // Add visual feedback
+        createRippleEffect(recordBtn);
+        
+        // Simulate analysis delay
+        recordBtn.disabled = true;
+        recordBtn.innerHTML = '<span class="btn-icon">⏳</span><span class="btn-text">Analyzing...</span>';
+        
+        setTimeout(() => {
+            // Reset button
+            recordBtn.disabled = false;
+            recordBtn.innerHTML = '<span class="btn-icon">🎤</span><span class="btn-text">Record Your Performance</span>';
+            
+            // Show feedback
+            showPerformanceFeedback(scenario);
+            
+            // Move to next scene
+            completedScenes++;
+            
+            if (currentScene < totalScenes) {
+                currentScene++;
+                setTimeout(() => {
+                    loadScene(currentScene);
+                }, 3000); // Give time to read feedback
+            } else {
+                // All scenes completed
+                completeToneTheater();
+            }
+        }, 2000);
+    }
+    
+    function playExample() {
+        const scenario = characterScenarios[currentCharacter][currentScene - 1];
+        
+        // Add visual feedback
+        createRippleEffect(exampleBtn);
+        
+        // Simulate playing example
+        exampleBtn.disabled = true;
+        exampleBtn.innerHTML = '<span class="btn-icon">🔊</span><span class="btn-text">Playing...</span>';
+        
+        setTimeout(() => {
+            exampleBtn.disabled = false;
+            exampleBtn.innerHTML = '<span class="btn-icon">🎧</span><span class="btn-text">Hear Example</span>';
+            
+            // Show example feedback
+            showExampleFeedback(scenario);
+        }, 1500);
+    }
+    
+    function showPerformanceFeedback(scenario) {
+        const feedback = document.getElementById('performance-feedback');
+        
+        // Generate positive feedback
+        const feedbackMessages = [
+            "Excellent emotional expression!",
+            "Perfect tone for that character!",
+            "Great job capturing the mood!",
+            "Wonderful intonation choice!",
+            "You really brought that character to life!"
+        ];
+        
+        const randomFeedback = feedbackMessages[Math.floor(Math.random() * feedbackMessages.length)];
+        
+        feedback.innerHTML = `
+            <div class="feedback-content success">
+                <div class="feedback-icon">🎭</div>
+                <div class="feedback-text">
+                    <strong>${randomFeedback}</strong>
+                    <p>Your ${scenario.emotion} tone with ${scenario.tone} intonation was spot on!</p>
+                </div>
+            </div>
+        `;
+        
+        feedback.removeAttribute('hidden');
+    }
+    
+    function showExampleFeedback(scenario) {
+        const feedback = document.getElementById('performance-feedback');
+        
+        feedback.innerHTML = `
+            <div class="feedback-content example">
+                <div class="feedback-icon">🎧</div>
+                <div class="feedback-text">
+                    <strong>Example Analysis</strong>
+                    <p>Notice the ${scenario.emotion} emotion expressed through ${scenario.tone} intonation.</p>
+                    <p>Try to match this emotional intensity in your performance.</p>
+                </div>
+            </div>
+        `;
+        
+        feedback.removeAttribute('hidden');
+    }
+    
+    function completeToneTheater() {
+        const theaterExercise = document.querySelector('.theater-exercise');
+        if (theaterExercise) {
+            theaterExercise.classList.add('completed');
+            
+            // Mark step as completed
+            const itemNumber = parseInt(theaterExercise.getAttribute('data-item'));
+            markItemCompleted(theaterExercise, itemNumber, 'session4', 4);
+            updateStepProgress('session4', 4, itemNumber);
+            
+            // Show completion feedback
+            const characterCard = document.querySelector(`[data-character="${currentCharacter}"]`);
+            const characterName = characterCard.querySelector('.character-name').textContent;
+            
+            showModal('Tone Theater Mastered!', 
+                     `🎭 Outstanding performance! You've mastered the ${characterName} character and completed Session 4!`, 
+                     'success');
+        }
+    }
+}
+
+function initializeSession4Games() {
+    // Initialize emotion wheel
+    initializeEmotionWheel();
+    
+    // Initialize situation matcher
+    initializeSituationMatcher();
+    
+    // Initialize conversation builder
+    initializeConversationBuilder();
+    
+    // Initialize tone theater
+    initializeToneTheater();
+    
+    console.log('Session 4 games initialized');
+}
+
+function initializeEmotionWheel() {
+    const emotionSegments = document.querySelectorAll('.emotion-segment');
+    const emotionExample = document.getElementById('emotion-example');
+    const exampleSentence = emotionExample?.querySelector('.example-sentence');
+    const toneVisualization = emotionExample?.querySelector('.tone-visualization');
+    const emotionAudioBtn = emotionExample?.querySelector('.emotion-audio-btn');
+    
+    // Define example sentences for each emotion
+    const emotionData = {
+        'happy': {
+            sentence: 'That\'s wonderful news!',
+            tone: 'rising',
+            pattern: '↗',
+            description: 'Rising intonation shows enthusiasm and positivity',
+            color: '#10b981'
+        },
+        'excited': {
+            sentence: 'I can\'t believe it!',
+            tone: 'high-rise',
+            pattern: '↗↗',
+            description: 'High rising tone conveys intense excitement',
+            color: '#f59e0b'
+        },
+        'curious': {
+            sentence: 'What do you think?',
+            tone: 'rising',
+            pattern: '↗',
+            description: 'Rising tone invites response and shows interest',
+            color: '#3b82f6'
+        },
+        'confident': {
+            sentence: 'I know exactly what to do.',
+            tone: 'falling',
+            pattern: '↘',
+            description: 'Falling tone shows certainty and authority',
+            color: '#8b5cf6'
+        },
+        'disappointed': {
+            sentence: 'That\'s not what I expected.',
+            tone: 'low-fall',
+            pattern: '↘↘',
+            description: 'Low falling tone expresses disappointment',
+            color: '#ef4444'
+        },
+        'surprised': {
+            sentence: 'I didn\'t expect that!',
+            tone: 'rise-fall',
+            pattern: '↗↘',
+            description: 'Rise-fall pattern shows genuine surprise',
+            color: '#06b6d4'
+        }
+    };
+    
+    let currentEmotion = null;
+    let completedEmotions = new Set();
+    
+    emotionSegments.forEach(segment => {
+        segment.addEventListener('click', function() {
+            const emotion = this.getAttribute('data-emotion');
+            const emotionInfo = emotionData[emotion];
+            
+            if (!emotionInfo) return;
+            
+            // Remove active state from all segments
+            emotionSegments.forEach(seg => seg.classList.remove('active'));
+            
+            // Add active state to clicked segment
+            this.classList.add('active');
+            
+            // Update current emotion
+            currentEmotion = emotion;
+            
+            // Show emotion example
+            if (emotionExample) {
+                emotionExample.removeAttribute('hidden');
+                
+                // Update sentence
+                if (exampleSentence) {
+                    exampleSentence.textContent = emotionInfo.sentence;
+                    exampleSentence.style.color = emotionInfo.color;
+                }
+                
+                // Update tone visualization
+                if (toneVisualization) {
+                    createToneVisualization(toneVisualization, emotionInfo);
+                }
+                
+                // Update audio button
+                if (emotionAudioBtn) {
+                    emotionAudioBtn.setAttribute('data-audio-id', `emotion-${emotion}`);
+                    const emotionBtnTextElement = emotionAudioBtn.querySelector('.btn-text');
+                    if (emotionBtnTextElement) {
+                        emotionBtnTextElement.textContent = `Practice ${emotion.charAt(0).toUpperCase() + emotion.slice(1)} Tone`;
+                    }
+                }
+            }
+            
+            // Add visual feedback
+            this.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 200);
+        });
+        
+        // Add hover effects
+        segment.addEventListener('mouseenter', function() {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'scale(1.05)';
+                this.style.filter = 'brightness(1.1)';
+            }
+        });
+        
+        segment.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'scale(1)';
+                this.style.filter = 'brightness(1)';
+            }
+        });
+    });
+    
+    // Initialize emotion audio buttons
+    if (emotionAudioBtn) {
+        emotionAudioBtn.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio-id');
+            if (audioId && currentEmotion) {
+                // Add to completed emotions
+                completedEmotions.add(currentEmotion);
+                
+                // Visual feedback
+                createRippleEffect(this);
+                
+                // Play audio
+                playAudio(audioId, this);
+                
+                // Mark emotion as practiced
+                const activeSegment = document.querySelector('.emotion-segment.active');
+                if (activeSegment) {
+                    activeSegment.classList.add('practiced');
+                }
+                
+                // Check if all emotions are practiced
+                if (completedEmotions.size === 6) {
+                    markEmotionWheelComplete();
+                }
+            }
+        });
+    }
+}
+
+function createToneVisualization(container, emotionInfo) {
+    container.innerHTML = '';
+    
+    const canvas = document.createElement('canvas');
+    canvas.width = 300;
+    canvas.height = 80;
+    canvas.style.border = '2px solid #e5e7eb';
+    canvas.style.borderRadius = '8px';
+    canvas.style.background = '#f9fafb';
+    
+    const ctx = canvas.getContext('2d');
+    
+    // Draw tone pattern
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = emotionInfo.color;
+    ctx.lineWidth = 3;
+    ctx.lineCap = 'round';
+    
+    ctx.beginPath();
+    
+    // Draw different patterns based on tone
+    switch (emotionInfo.tone) {
+        case 'rising':
+            ctx.moveTo(50, 60);
+            ctx.quadraticCurveTo(150, 40, 250, 20);
+            break;
+        case 'falling':
+            ctx.moveTo(50, 20);
+            ctx.quadraticCurveTo(150, 40, 250, 60);
+            break;
+        case 'high-rise':
+            ctx.moveTo(50, 70);
+            ctx.quadraticCurveTo(100, 30, 150, 10);
+            ctx.quadraticCurveTo(200, 5, 250, 5);
+            break;
+        case 'low-fall':
+            ctx.moveTo(50, 30);
+            ctx.quadraticCurveTo(150, 50, 250, 70);
+            break;
+        case 'rise-fall':
+            ctx.moveTo(50, 50);
+            ctx.quadraticCurveTo(120, 20, 150, 15);
+            ctx.quadraticCurveTo(180, 20, 250, 55);
+            break;
+    }
+    
+    ctx.stroke();
+    
+    // Add pattern symbol
+    ctx.fillStyle = emotionInfo.color;
+    ctx.font = '24px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText(emotionInfo.pattern, canvas.width - 30, 30);
+    
+    // Add description
+    const description = document.createElement('p');
+    description.textContent = emotionInfo.description;
+    description.style.marginTop = '10px';
+    description.style.fontSize = '14px';
+    description.style.color = '#6b7280';
+    description.style.textAlign = 'center';
+    
+    container.appendChild(canvas);
+    container.appendChild(description);
+}
+
+function markEmotionWheelComplete() {
+    const emotionWheel = document.querySelector('.emotion-wheel');
+    if (emotionWheel) {
+        emotionWheel.classList.add('completed');
+        
+        // Mark step as completed
+        const itemNumber = parseInt(emotionWheel.getAttribute('data-item'));
+        markItemCompleted(emotionWheel, itemNumber, 'session4', 1);
+        updateStepProgress('session4', 1, itemNumber);
+        
+        // Show completion feedback
+        showModal('Emotion Wheel Mastered!', 'Excellent! You\'ve practiced all 6 emotions. You\'re ready for the Situation Matcher!', 'success');
+    }
+}
+
+function initializeSituationMatcher() {
+    const toneCards = document.querySelectorAll('.tone-card.draggable');
+    const dropZones = document.querySelectorAll('.situation-card .drop-zone');
+    const scoreDisplay = document.getElementById('match-score');
+    
+    let draggedTone = null;
+    let currentScore = 0;
+    let maxScore = 6;
+    
+    // Initialize drag and drop
+    toneCards.forEach(card => {
+        card.draggable = true;
+        card.addEventListener('dragstart', handleToneDragStart);
+        card.addEventListener('dragend', handleToneDragEnd);
+    });
+    
+    dropZones.forEach(zone => {
+        zone.addEventListener('dragover', handleToneDragOver);
+        zone.addEventListener('drop', handleToneDrop);
+        zone.addEventListener('dragenter', handleToneDragEnter);
+        zone.addEventListener('dragleave', handleToneDragLeave);
+    });
+    
+    function handleToneDragStart(e) {
+        draggedTone = this;
+        this.style.opacity = '0.5';
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/html', this.outerHTML);
+    }
+    
+    function handleToneDragEnd(e) {
+        this.style.opacity = '1';
+        draggedTone = null;
+    }
+    
+    function handleToneDragOver(e) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+    }
+    
+    function handleToneDragEnter(e) {
+        e.preventDefault();
+        this.classList.add('drag-over');
+        this.parentElement.classList.add('drag-highlight');
+    }
+    
+    function handleToneDragLeave(e) {
+        this.classList.remove('drag-over');
+        this.parentElement.classList.remove('drag-highlight');
+    }
+    
+    function handleToneDrop(e) {
+        e.preventDefault();
+        this.classList.remove('drag-over');
+        this.parentElement.classList.remove('drag-highlight');
+        
+        if (draggedTone) {
+            const correctTone = this.getAttribute('data-correct-tone');
+            const droppedTone = draggedTone.getAttribute('data-tone');
+            
+            // Check if drop is correct
+            if (correctTone === droppedTone) {
+                // Correct match
+                this.appendChild(draggedTone.cloneNode(true));
+                draggedTone.remove();
+                
+                // Update visual feedback
+                this.classList.add('correct-match');
+                this.parentElement.classList.add('matched');
+                
+                // Update score
+                currentScore++;
+                updateScore();
+                
+                // Show success feedback
+                showSituationFeedback('Correct match!', 'success');
+                
+                // Check if all matches complete
+                if (currentScore === maxScore) {
+                    completeSituationMatcher();
+                }
+            } else {
+                // Incorrect match
+                this.classList.add('incorrect-match');
+                
+                // Remove incorrect styling after animation
+                setTimeout(() => {
+                    this.classList.remove('incorrect-match');
+                }, 1000);
+                
+                // Show error feedback
+                showSituationFeedback('Not quite right. Try a different tone!', 'error');
+            }
+        }
+    }
+    
+    function updateScore() {
+        if (scoreDisplay) {
+            scoreDisplay.textContent = currentScore;
+            
+            // Add score animation
+            scoreDisplay.style.transform = 'scale(1.2)';
+            scoreDisplay.style.color = 'var(--success)';
+            
+            setTimeout(() => {
+                scoreDisplay.style.transform = 'scale(1)';
+                scoreDisplay.style.color = 'var(--text-primary)';
+            }, 300);
+        }
+    }
+    
+    function showSituationFeedback(message, type) {
+        const feedback = document.getElementById('matching-feedback');
+        if (feedback) {
+            feedback.textContent = message;
+            feedback.className = `matching-feedback ${type}`;
+            feedback.removeAttribute('hidden');
+            
+            // Auto-hide after 3 seconds
+            setTimeout(() => {
+                feedback.setAttribute('hidden', '');
+            }, 3000);
+        }
+    }
+    
+    function completeSituationMatcher() {
+        const matchingExercise = document.querySelector('.matching-exercise');
+        if (matchingExercise) {
+            matchingExercise.classList.add('completed');
+            
+            // Mark step as completed
+            const itemNumber = parseInt(matchingExercise.getAttribute('data-item'));
+            markItemCompleted(matchingExercise, itemNumber, 'session4', 2);
+            updateStepProgress('session4', 2, itemNumber);
+            
+            // Show completion feedback
+            showModal('Situation Matcher Mastered!', '🎉 Perfect! You\'ve matched all situations with their appropriate tones. Ready for the Conversation Builder!', 'success');
+        }
+    }
+    
+    // Add reset functionality
+    const resetButton = document.createElement('button');
+    resetButton.className = 'reset-btn';
+    resetButton.innerHTML = '<span class="btn-icon">🔄</span><span class="btn-text">Reset Game</span>';
+    resetButton.addEventListener('click', resetSituationMatcher);
+    
+    const gameContainer = document.querySelector('.situation-matcher-game');
+    if (gameContainer) {
+        gameContainer.appendChild(resetButton);
+    }
+    
+    function resetSituationMatcher() {
+        // Reset score
+        currentScore = 0;
+        updateScore();
+        
+        // Clear all matches
+        dropZones.forEach(zone => {
+            zone.innerHTML = '';
+            zone.classList.remove('correct-match', 'incorrect-match');
+            zone.parentElement.classList.remove('matched');
+        });
+        
+        // Restore tone cards
+        const tonesColumn = document.querySelector('.tones-column');
+        if (tonesColumn) {
+            tonesColumn.innerHTML = `
+                <div class="tone-card draggable" data-tone="confident-falling">
+                    <div class="tone-pattern">↘</div>
+                    <div class="tone-label">Confident</div>
+                </div>
+                <div class="tone-card draggable" data-tone="curious-rising">
+                    <div class="tone-pattern">↗</div>
+                    <div class="tone-label">Curious</div>
+                </div>
+                <div class="tone-card draggable" data-tone="warm-rising">
+                    <div class="tone-pattern">↗</div>
+                    <div class="tone-label">Warm</div>
+                </div>
+                <div class="tone-card draggable" data-tone="empathetic-falling">
+                    <div class="tone-pattern">↘</div>
+                    <div class="tone-label">Empathetic</div>
+                </div>
+                <div class="tone-card draggable" data-tone="excited-high-rise">
+                    <div class="tone-pattern">↗↗</div>
+                    <div class="tone-label">Excited</div>
+                </div>
+                <div class="tone-card draggable" data-tone="sincere-fall-rise">
+                    <div class="tone-pattern">↘↗</div>
+                    <div class="tone-label">Sincere</div>
+                </div>
+            `;
+            
+            // Re-initialize drag and drop
+            const newToneCards = tonesColumn.querySelectorAll('.tone-card.draggable');
+            newToneCards.forEach(card => {
+                card.draggable = true;
+                card.addEventListener('dragstart', handleToneDragStart);
+                card.addEventListener('dragend', handleToneDragEnd);
+            });
+        }
+        
+        // Hide feedback
+        const feedback = document.getElementById('matching-feedback');
+        if (feedback) {
+            feedback.setAttribute('hidden', '');
+        }
+    }
+}
+
+function initializeClappingGames() {
+    const clappingButtons = document.querySelectorAll('.beat-practice-btn');
+    
+    clappingButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const word = this.getAttribute('data-word');
+            const gameId = `${word}-clapping`;
+            const gameElement = document.getElementById(gameId);
+            
+            if (gameElement) {
+                // Toggle game visibility
+                const isHidden = gameElement.hasAttribute('hidden');
+                
+                // Hide all other clapping games
+                document.querySelectorAll('.clapping-game').forEach(game => {
+                    game.setAttribute('hidden', '');
+                });
+                
+                if (isHidden) {
+                    gameElement.removeAttribute('hidden');
+                    startClappingGame(word, gameElement);
+                } else {
+                    gameElement.setAttribute('hidden', '');
+                }
+            }
+        });
+    });
+}
+
+function startClappingGame(word, gameElement) {
+    const clappingBeats = gameElement.querySelectorAll('.clap-beat');
+    const feedback = gameElement.querySelector('.clap-feedback');
+    
+    let currentBeat = 0;
+    let clappingSequence = [];
+    
+    // Define correct clapping patterns
+    const clappingPatterns = {
+        'present': [true, false], // PRE-sent: clap on first beat
+        'photograph': [true, false, false] // PHO-to-graph: clap on first beat
+    };
+    
+    const correctPattern = clappingPatterns[word] || [true, false];
+    
+    // Reset game state
+    clappingBeats.forEach(beat => {
+        beat.classList.remove('clapped', 'correct', 'incorrect');
+    });
+    
+    feedback.textContent = 'Click on the STRONG beats (●) to clap along!';
+    feedback.className = 'clap-feedback';
+    
+    // Add click handlers to beats
+    clappingBeats.forEach((beat, index) => {
+        beat.addEventListener('click', function() {
+            const isStrong = beat.classList.contains('strong');
+            const shouldClap = correctPattern[index];
+            
+            beat.classList.add('clapped');
+            
+            if (shouldClap && isStrong) {
+                beat.classList.add('correct');
+                clappingSequence[index] = true;
+                
+                // Play clap sound effect (visual feedback)
+                beat.style.transform = 'scale(1.2)';
+                beat.style.background = 'var(--success)';
+                
+                setTimeout(() => {
+                    beat.style.transform = 'scale(1)';
+                    beat.style.background = '';
+                }, 200);
+                
+            } else if (!shouldClap && !isStrong) {
+                // Correct - didn't clap on weak beat
+                clappingSequence[index] = false;
+            } else {
+                // Incorrect clapping
+                beat.classList.add('incorrect');
+                beat.style.background = 'var(--error)';
+                
+                setTimeout(() => {
+                    beat.style.background = '';
+                }, 500);
+            }
+            
+            // Check if game is complete
+            if (clappingSequence.length === correctPattern.length) {
+                const isCorrect = clappingSequence.every((clap, i) => clap === correctPattern[i]);
+                
+                if (isCorrect) {
+                    feedback.textContent = '🎉 Perfect rhythm! You\'ve mastered the stress pattern!';
+                    feedback.className = 'clap-feedback success';
+                    
+                    // Mark rhythm card as completed
+                    const rhythmCard = gameElement.closest('.rhythm-card');
+                    if (rhythmCard) {
+                        const itemNumber = parseInt(rhythmCard.getAttribute('data-item'));
+                        markItemCompleted(rhythmCard, itemNumber, 'session3', 1);
+                        updateStepProgress('session3', 1, itemNumber);
+                    }
+                } else {
+                    feedback.textContent = 'Not quite right. Try again! Focus on the strong beats (●)';
+                    feedback.className = 'clap-feedback error';
+                    
+                    // Reset after 2 seconds
+                    setTimeout(() => {
+                        clappingSequence = [];
+                        clappingBeats.forEach(beat => {
+                            beat.classList.remove('clapped', 'correct', 'incorrect');
+                        });
+                    }, 2000);
+                }
+            }
+        });
+    });
+}
+
+function initializeStressShifterGames() {
+    const shifterButtons = document.querySelectorAll('.stress-shifter-btn');
+    
+    shifterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const word = this.getAttribute('data-word');
+            const gameId = `${word}-shifting`;
+            const gameElement = document.getElementById(gameId);
+            
+            if (gameElement) {
+                // Toggle game visibility
+                const isHidden = gameElement.hasAttribute('hidden');
+                
+                // Hide all other stress shifter games
+                document.querySelectorAll('.stress-shift-game').forEach(game => {
+                    game.setAttribute('hidden', '');
+                });
+                
+                if (isHidden) {
+                    gameElement.removeAttribute('hidden');
+                    startStressShifterGame(word, gameElement);
+                } else {
+                    gameElement.setAttribute('hidden', '');
+                }
+            }
+        });
+    });
+}
+
+function startStressShifterGame(word, gameElement) {
+    const syllables = gameElement.querySelectorAll('.syllable.clickable');
+    const feedback = gameElement.querySelector('.shift-feedback');
+    
+    // Define stress patterns for different word forms
+    const stressPatterns = {
+        'photograph': {
+            'photograph': 1, // PHO-to-graph (1st syllable)
+            'photography': 2, // pho-TOG-ra-phy (2nd syllable)
+            'photographic': 3 // pho-to-GRAPH-ic (3rd syllable)
+        }
+    };
+    
+    const patterns = stressPatterns[word];
+    let currentForm = 'photograph'; // Start with base form
+    
+    // Reset syllables
+    syllables.forEach(syllable => {
+        syllable.classList.remove('stressed', 'correct', 'incorrect');
+    });
+    
+    feedback.textContent = 'Click the stressed syllable in "photograph"';
+    feedback.className = 'shift-feedback';
+    
+    // Add click handlers
+    syllables.forEach((syllable, index) => {
+        syllable.addEventListener('click', function() {
+            const stressPosition = parseInt(this.getAttribute('data-stress-pos'));
+            const correctStress = patterns[currentForm];
+            
+            // Remove previous styling
+            syllables.forEach(syl => syl.classList.remove('stressed', 'correct', 'incorrect'));
+            
+            // Add stressed styling
+            this.classList.add('stressed');
+            
+            if (stressPosition === correctStress) {
+                this.classList.add('correct');
+                feedback.textContent = '✓ Correct! Now try "photography"';
+                feedback.className = 'shift-feedback success';
+                
+                // Move to next form
+                if (currentForm === 'photograph') {
+                    currentForm = 'photography';
+                    setTimeout(() => {
+                        feedback.textContent = 'Click the stressed syllable in "photography"';
+                        syllables.forEach(syl => syl.classList.remove('stressed', 'correct', 'incorrect'));
+                    }, 1500);
+                } else {
+                    // Game complete
+                    setTimeout(() => {
+                        feedback.textContent = '🎉 Excellent! You\'ve mastered stress shifting!';
+                        
+                        // Mark rhythm card as completed
+                        const rhythmCard = gameElement.closest('.rhythm-card');
+                        if (rhythmCard) {
+                            const itemNumber = parseInt(rhythmCard.getAttribute('data-item'));
+                            markItemCompleted(rhythmCard, itemNumber, 'session3', 1);
+                            updateStepProgress('session3', 1, itemNumber);
+                        }
+                    }, 1000);
+                }
+            } else {
+                this.classList.add('incorrect');
+                feedback.textContent = `Not quite. The stress is on syllable ${correctStress}. Try again!`;
+                feedback.className = 'shift-feedback error';
+            }
+        });
+    });
+}
+
+function initializeSyllableClicking() {
+    const syllableExercises = document.querySelectorAll('.stress-exercise');
+    
+    syllableExercises.forEach(exercise => {
+        const syllables = exercise.querySelectorAll('.syllable.clickable');
+        const feedback = exercise.querySelector('.exercise-feedback');
+        const playButton = exercise.querySelector('.play-word-btn');
+        
+        // Define correct stress positions for different words
+        const correctStress = {
+            'important': 2, // im-POR-tant (2nd syllable)
+            'development': 2, // de-VEL-op-ment (2nd syllable)
+            'education': 3 // ed-u-CA-tion (3rd syllable)
+        };
+        
+        // Add click handlers to syllables
+        syllables.forEach((syllable, index) => {
+            syllable.addEventListener('click', function() {
+                const syllableNumber = parseInt(this.getAttribute('data-syllable'));
+                const practiceWord = exercise.closest('.practice-word');
+                const word = practiceWord ? practiceWord.getAttribute('data-word') : 'important';
+                const correct = correctStress[word];
+                
+                // Remove previous styling
+                syllables.forEach(syl => syl.classList.remove('selected', 'correct', 'incorrect'));
+                
+                // Add selected styling
+                this.classList.add('selected');
+                
+                // Show feedback
+                feedback.removeAttribute('hidden');
+                
+                if (syllableNumber === correct) {
+                    this.classList.add('correct');
+                    const stressMessages = {
+                        'important': '✓ Correct! "Important" is stressed on the second syllable (im-POR-tant)',
+                        'development': '✓ Correct! "Development" is stressed on the second syllable (de-VEL-op-ment)',
+                        'education': '✓ Correct! "Education" is stressed on the third syllable (ed-u-CA-tion)'
+                    };
+                    
+                    feedback.textContent = stressMessages[word];
+                    feedback.className = 'exercise-feedback success';
+                    
+                    // Mark exercise as completed
+                    const exerciseCard = exercise.closest('.practice-exercise-card');
+                    if (exerciseCard && !practiceWord) {
+                        const itemNumber = parseInt(exerciseCard.getAttribute('data-item'));
+                        markItemCompleted(exerciseCard, itemNumber, 'session3', 2);
+                        updateStepProgress('session3', 2, itemNumber);
+                    }
+                } else {
+                    this.classList.add('incorrect');
+                    feedback.textContent = `Not quite. Try again! Listen carefully to which syllable sounds strongest.`;
+                    feedback.className = 'exercise-feedback error';
+                }
+            });
+        });
+        
+        // Add play button functionality
+        if (playButton) {
+            playButton.addEventListener('click', function() {
+                const audioId = this.getAttribute('data-audio-id');
+                
+                // Enhanced visual feedback
+                createRippleEffect(this);
+                this.style.transform = 'scale(0.95)';
+                
+                // Play audio with enhanced feedback
+                playAudio(audioId, this);
+                
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        }
+    });
+    
+    // Initialize expand practice buttons
+    const expandButtons = document.querySelectorAll('.expand-practice-btn');
+    expandButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            const targetElement = document.querySelector(`.${target}`);
+            
+            if (targetElement) {
+                const isHidden = targetElement.hasAttribute('hidden');
+                
+                if (isHidden) {
+                    targetElement.removeAttribute('hidden');
+                    const btnTextElement = this.querySelector('.btn-text');
+                    const btnIconElement = this.querySelector('.btn-icon');
+                    if (btnTextElement) btnTextElement.textContent = 'Show Less';
+                    if (btnIconElement) btnIconElement.textContent = '−';
+                } else {
+                    targetElement.setAttribute('hidden', '');
+                    const btnTextElement = this.querySelector('.btn-text');
+                    const btnIconElement = this.querySelector('.btn-icon');
+                    if (btnTextElement) btnTextElement.textContent = 'Practice More Words';
+                    if (btnIconElement) btnIconElement.textContent = '+';
+                }
+            }
+        });
+    });
 }
 
 function initializeWordChoices() {
@@ -1256,6 +2988,425 @@ function showCelebration(practiceSection) {
     
     // Remove after 3 seconds
     setTimeout(() => celebration.remove(), 3000);
+}
+
+function initializeSentenceStressDragDrop() {
+    const stressMarkers = document.querySelectorAll('.stress-marker.draggable');
+    const syllableSlots = document.querySelectorAll('.syllable-slot');
+    const stressFeedback = document.querySelector('.sentence-stress-practice .stress-feedback');
+    
+    let draggedMarker = null;
+    let placedMarkers = 0;
+    
+    // Make stress markers draggable
+    stressMarkers.forEach(marker => {
+        marker.draggable = true;
+        marker.addEventListener('dragstart', handleStressMarkerDragStart);
+        marker.addEventListener('dragend', handleStressMarkerDragEnd);
+    });
+    
+    // Setup syllable slots as drop zones
+    syllableSlots.forEach(slot => {
+        slot.addEventListener('dragover', handleSyllableDragOver);
+        slot.addEventListener('drop', handleSyllableDrop);
+        slot.addEventListener('dragenter', handleSyllableDragEnter);
+        slot.addEventListener('dragleave', handleSyllableDragLeave);
+    });
+    
+    function handleStressMarkerDragStart(e) {
+        draggedMarker = this;
+        this.style.opacity = '0.5';
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/html', this.outerHTML);
+    }
+    
+    function handleStressMarkerDragEnd(e) {
+        this.style.opacity = '1';
+        draggedMarker = null;
+    }
+    
+    function handleSyllableDragOver(e) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+    }
+    
+    function handleSyllableDragEnter(e) {
+        e.preventDefault();
+        this.classList.add('drag-over');
+    }
+    
+    function handleSyllableDragLeave(e) {
+        this.classList.remove('drag-over');
+    }
+    
+    function handleSyllableDrop(e) {
+        e.preventDefault();
+        this.classList.remove('drag-over');
+        
+        if (draggedMarker) {
+            // Check if slot already has a marker
+            const existingMarker = this.querySelector('.stress-marker');
+            if (existingMarker) {
+                // Return existing marker to bank
+                const markerBank = document.querySelector('.marker-bank');
+                markerBank.appendChild(existingMarker);
+                placedMarkers--;
+            }
+            
+            // Place new marker
+            this.appendChild(draggedMarker.cloneNode(true));
+            draggedMarker.remove();
+            placedMarkers++;
+            
+            // Check if placement is correct
+            const isCorrect = this.hasAttribute('data-correct');
+            if (isCorrect) {
+                this.classList.add('correct-stress');
+                this.querySelector('.stress-marker').style.color = 'var(--success)';
+            } else {
+                this.classList.add('incorrect-stress');
+                this.querySelector('.stress-marker').style.color = 'var(--error)';
+            }
+            
+            // Check if all markers are placed
+            if (placedMarkers === 3) {
+                checkSentenceStressCompletion();
+            }
+        }
+    }
+    
+    function checkSentenceStressCompletion() {
+        const correctSlots = document.querySelectorAll('.syllable-slot.correct-stress');
+        const incorrectSlots = document.querySelectorAll('.syllable-slot.incorrect-stress');
+        
+        if (correctSlots.length === 3 && incorrectSlots.length === 0) {
+            // All correct
+            stressFeedback.removeAttribute('hidden');
+            stressFeedback.textContent = '🎉 Perfect! You\'ve correctly identified all the stressed syllables!';
+            stressFeedback.className = 'stress-feedback success';
+            
+            // Mark exercise as completed
+            const exerciseCard = document.querySelector('.practice-exercise-card[data-pair="sentence-stress"]');
+            if (exerciseCard) {
+                const itemNumber = parseInt(exerciseCard.getAttribute('data-item'));
+                markItemCompleted(exerciseCard, itemNumber, 'session3', 2);
+                updateStepProgress('session3', 2, itemNumber);
+            }
+        } else if (placedMarkers === 3) {
+            // Some incorrect
+            stressFeedback.removeAttribute('hidden');
+            stressFeedback.textContent = `You got ${correctSlots.length} out of 3 correct. Try moving the markers to different syllables.`;
+            stressFeedback.className = 'stress-feedback error';
+            
+            // Allow retry after 3 seconds
+            setTimeout(() => {
+                resetSentenceStressGame();
+            }, 3000);
+        }
+    }
+    
+    function resetSentenceStressGame() {
+        // Remove all markers from slots
+        const placedMarkers = document.querySelectorAll('.syllable-slot .stress-marker');
+        placedMarkers.forEach(marker => marker.remove());
+        
+        // Reset slot classes
+        syllableSlots.forEach(slot => {
+            slot.classList.remove('correct-stress', 'incorrect-stress');
+        });
+        
+        // Restore markers to bank
+        const markerBank = document.querySelector('.marker-bank');
+        for (let i = 1; i <= 3; i++) {
+            const marker = document.createElement('div');
+            marker.className = 'stress-marker draggable';
+            marker.setAttribute('data-marker', i);
+            marker.textContent = '●';
+            marker.draggable = true;
+            marker.addEventListener('dragstart', handleStressMarkerDragStart);
+            marker.addEventListener('dragend', handleStressMarkerDragEnd);
+            markerBank.appendChild(marker);
+        }
+        
+        placedMarkers = 0;
+        
+        // Hide feedback
+        stressFeedback.setAttribute('hidden', '');
+    }
+}
+
+function initializeMetronome() {
+    const metronomeButtons = document.querySelectorAll('.metronome-btn');
+    const tempoSliders = document.querySelectorAll('.tempo-slider');
+    let metronomeInterval = null;
+    let currentBeat = 0;
+    let isRunning = false;
+    
+    // Initialize tempo display updates
+    tempoSliders.forEach(slider => {
+        const display = slider.parentElement.querySelector('.tempo-display');
+        
+        slider.addEventListener('input', function() {
+            display.textContent = this.value + ' BPM';
+        });
+    });
+    
+    // Initialize metronome buttons
+    metronomeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const word = this.getAttribute('data-word');
+            const game = this.closest('.clapping-game, .stress-shift-game');
+            const tempoSlider = game.querySelector('.tempo-slider');
+            const beatIndicators = game.querySelectorAll('.beat-indicator');
+            
+            if (isRunning) {
+                stopMetronome(this);
+            } else {
+                startMetronome(this, word, parseInt(tempoSlider.value), beatIndicators);
+            }
+        });
+    });
+    
+    function startMetronome(button, word, tempo, beatIndicators) {
+        isRunning = true;
+        currentBeat = 0;
+        
+        // Update button state
+        button.querySelector('.metronome-icon').textContent = '⏸';
+        button.querySelector('.metronome-text').textContent = 'Stop Metronome';
+        button.classList.add('active');
+        
+        // Define beat patterns
+        const beatPatterns = {
+            'present': [true, false], // Strong, weak
+            'photograph': [true, false, false] // Strong, weak, weak
+        };
+        
+        const pattern = beatPatterns[word] || [true, false];
+        const beatDuration = 60000 / tempo; // Convert BPM to milliseconds
+        
+        // Start metronome
+        metronomeInterval = setInterval(() => {
+            // Reset all indicators
+            beatIndicators.forEach(indicator => {
+                indicator.classList.remove('active', 'strong', 'weak');
+            });
+            
+            // Activate current beat
+            const currentIndicator = beatIndicators[currentBeat];
+            if (currentIndicator) {
+                currentIndicator.classList.add('active');
+                
+                if (pattern[currentBeat]) {
+                    currentIndicator.classList.add('strong');
+                    // Play strong beat sound (visual feedback)
+                    playMetronomeSound('strong');
+                } else {
+                    currentIndicator.classList.add('weak');
+                    // Play weak beat sound (visual feedback)
+                    playMetronomeSound('weak');
+                }
+            }
+            
+            // Move to next beat
+            currentBeat = (currentBeat + 1) % pattern.length;
+        }, beatDuration);
+    }
+    
+    function stopMetronome(button) {
+        isRunning = false;
+        
+        // Clear interval
+        if (metronomeInterval) {
+            clearInterval(metronomeInterval);
+            metronomeInterval = null;
+        }
+        
+        // Reset button state
+        button.querySelector('.metronome-icon').textContent = '⏵';
+        button.querySelector('.metronome-text').textContent = 'Start Metronome';
+        button.classList.remove('active');
+        
+        // Clear all beat indicators
+        const game = button.closest('.clapping-game, .stress-shift-game');
+        const beatIndicators = game.querySelectorAll('.beat-indicator');
+        beatIndicators.forEach(indicator => {
+            indicator.classList.remove('active', 'strong', 'weak');
+        });
+    }
+    
+    function playMetronomeSound(type) {
+        // Create audio context for metronome sounds
+        if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            // Different frequencies for strong vs weak beats
+            oscillator.frequency.value = type === 'strong' ? 800 : 600;
+            oscillator.type = 'sine';
+            
+            // Short beep
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.1);
+        }
+    }
+    
+    // Stop metronome when games are hidden
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('beat-practice-btn') || 
+            e.target.classList.contains('stress-shifter-btn')) {
+            // Stop any running metronome when switching games
+            if (isRunning) {
+                const activeButton = document.querySelector('.metronome-btn.active');
+                if (activeButton) {
+                    stopMetronome(activeButton);
+                }
+            }
+        }
+    });
+}
+
+function initializeWaveformDisplays() {
+    const waveformCanvases = document.querySelectorAll('.stress-waveform');
+    
+    waveformCanvases.forEach(canvas => {
+        const word = canvas.getAttribute('data-word');
+        drawStressWaveform(canvas, word);
+    });
+}
+
+function drawStressWaveform(canvas, word) {
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    
+    // Clear canvas
+    ctx.clearRect(0, 0, width, height);
+    
+    // Define stress patterns for different words
+    const stressPatterns = {
+        'present-noun': [0.9, 0.3], // PRE-sent: strong-weak
+        'present-verb': [0.3, 0.9], // pre-SENT: weak-strong
+        'photograph': [0.9, 0.4, 0.4], // PHO-to-graph: strong-weak-weak
+        'photography': [0.3, 0.9, 0.4, 0.4], // pho-TOG-ra-phy: weak-strong-weak-weak
+        'important': [0.3, 0.9, 0.4], // im-POR-tant: weak-strong-weak
+        'development': [0.3, 0.9, 0.4, 0.4], // de-VEL-op-ment: weak-strong-weak-weak
+        'education': [0.3, 0.3, 0.9, 0.4] // ed-u-CA-tion: weak-weak-strong-weak
+    };
+    
+    const pattern = stressPatterns[word] || [0.5, 0.5];
+    const syllableWidth = width / pattern.length;
+    
+    // Set up gradient
+    const gradient = ctx.createLinearGradient(0, 0, 0, height);
+    gradient.addColorStop(0, '#4f46e5'); // Brand primary
+    gradient.addColorStop(1, '#06b6d4'); // Brand secondary
+    
+    ctx.fillStyle = gradient;
+    ctx.strokeStyle = '#4f46e5';
+    ctx.lineWidth = 2;
+    
+    // Draw waveform
+    ctx.beginPath();
+    ctx.moveTo(0, height);
+    
+    for (let i = 0; i < pattern.length; i++) {
+        const x = i * syllableWidth;
+        const nextX = (i + 1) * syllableWidth;
+        const stress = pattern[i];
+        const waveHeight = height * stress;
+        
+        // Create smooth curve for each syllable
+        const peakX = x + syllableWidth / 2;
+        const peakY = height - waveHeight;
+        
+        // Control points for smooth curves
+        const cp1X = x + syllableWidth * 0.25;
+        const cp1Y = height - (waveHeight * 0.7);
+        const cp2X = x + syllableWidth * 0.75;
+        const cp2Y = height - (waveHeight * 0.7);
+        
+        // Draw curve to peak
+        ctx.quadraticCurveTo(cp1X, cp1Y, peakX, peakY);
+        
+        // Draw curve from peak
+        if (i < pattern.length - 1) {
+            ctx.quadraticCurveTo(cp2X, cp2Y, nextX, height - (height * pattern[i + 1] * 0.3));
+        } else {
+            ctx.quadraticCurveTo(cp2X, cp2Y, nextX, height);
+        }
+    }
+    
+    // Complete the shape
+    ctx.lineTo(width, height);
+    ctx.lineTo(0, height);
+    ctx.closePath();
+    
+    // Fill and stroke
+    ctx.fill();
+    ctx.stroke();
+    
+    // Add syllable markers
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '10px Inter, sans-serif';
+    ctx.textAlign = 'center';
+    
+    const syllableLabels = {
+        'present-noun': ['PRE', 'sent'],
+        'present-verb': ['pre', 'SENT'],
+        'photograph': ['PHO', 'to', 'graph'],
+        'photography': ['pho', 'TOG', 'ra', 'phy'],
+        'important': ['im', 'POR', 'tant'],
+        'development': ['de', 'VEL', 'op', 'ment'],
+        'education': ['ed', 'u', 'CA', 'tion']
+    };
+    
+    const labels = syllableLabels[word] || ['syl', 'la', 'ble'];
+    
+    for (let i = 0; i < labels.length && i < pattern.length; i++) {
+        const x = i * syllableWidth + syllableWidth / 2;
+        const stress = pattern[i];
+        const y = height - (height * stress) - 5;
+        
+        // Add text shadow for better visibility
+        ctx.fillStyle = '#000000';
+        ctx.fillText(labels[i], x + 1, y + 1);
+        ctx.fillStyle = '#ffffff';
+        ctx.fillText(labels[i], x, y);
+    }
+    
+    // Add animation on hover
+    canvas.addEventListener('mouseenter', function() {
+        animateWaveform(canvas, word);
+    });
+}
+
+function animateWaveform(canvas, word) {
+    const ctx = canvas.getContext('2d');
+    let frame = 0;
+    const maxFrames = 30;
+    
+    function animate() {
+        if (frame >= maxFrames) return;
+        
+        // Redraw with slight animation
+        ctx.save();
+        ctx.globalAlpha = 0.8 + 0.2 * Math.sin(frame * 0.2);
+        drawStressWaveform(canvas, word);
+        ctx.restore();
+        
+        frame++;
+        requestAnimationFrame(animate);
+    }
+    
+    animate();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -1650,4 +3801,500 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Scroll to top button not found');
     }
+
+    // --- SESSION 5: SPEECH SYMPHONY FUNCTIONALITY ---
+
+    // Session 5 audio mapping
+    audioMap['stress-timing'] = ['stress-timing'];
+    audioMap['weak-forms'] = ['weak-forms'];
+    audioMap['linking-melodies'] = ['linking-melodies'];
+    audioMap['sentence-orchestration'] = ['sentence-orchestration'];
+
+    // Melody Maker audio mapping
+    audioMap['phrase-excited'] = ['phrase-excited'];
+    audioMap['phrase-curious'] = ['phrase-curious'];
+    audioMap['phrase-surprised'] = ['phrase-surprised'];
+    audioMap['phrase-doubtful'] = ['phrase-doubtful'];
+    audioMap['conversational-duet'] = ['conversational-duet'];
+    audioMap['speech-symphony'] = ['speech-symphony'];
+    audioMap['freestyle-melody'] = ['freestyle-melody'];
+
+    // Performance venue audio mapping
+    audioMap['coffee-shop-performance'] = ['coffee-shop-performance'];
+    audioMap['business-presentation'] = ['business-presentation'];
+    audioMap['grand-theater-performance'] = ['grand-theater-performance'];
+
+    // Metronome functionality
+    class Metronome {
+        constructor() {
+            this.isPlaying = false;
+            this.bpm = 60;
+            this.interval = null;
+            this.audioContext = null;
+            this.nextNoteTime = 0.0;
+            this.scheduleAheadTime = 25.0;
+            this.lookahead = 25.0;
+        }
+
+        start() {
+            if (!this.audioContext) {
+                this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            
+            this.isPlaying = true;
+            this.nextNoteTime = this.audioContext.currentTime;
+            this.scheduler();
+        }
+
+        stop() {
+            this.isPlaying = false;
+            if (this.interval) {
+                clearTimeout(this.interval);
+            }
+        }
+
+        scheduler() {
+            while (this.nextNoteTime < this.audioContext.currentTime + this.scheduleAheadTime / 1000.0) {
+                this.scheduleNote(this.nextNoteTime);
+                this.nextNoteTime += 60.0 / this.bpm;
+            }
+            
+            if (this.isPlaying) {
+                this.interval = setTimeout(() => this.scheduler(), this.lookahead);
+            }
+        }
+
+        scheduleNote(time) {
+            const osc = this.audioContext.createOscillator();
+            const gain = this.audioContext.createGain();
+            
+            osc.connect(gain);
+            gain.connect(this.audioContext.destination);
+            
+            osc.frequency.value = 800;
+            gain.gain.setValueAtTime(0.1, time);
+            gain.gain.exponentialRampToValueAtTime(0.01, time + 0.1);
+            
+            osc.start(time);
+            osc.stop(time + 0.1);
+        }
+
+        setBPM(bpm) {
+            this.bpm = bpm;
+        }
+    }
+
+    const metronome = new Metronome();
+
+    // Metronome button functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.metronome-btn')) {
+            const targetId = e.target.closest('.metronome-btn').getAttribute('data-target');
+            const metronomeControl = document.getElementById(targetId);
+            
+            if (metronomeControl) {
+                metronomeControl.hidden = !metronomeControl.hidden;
+            }
+        }
+        
+        // Tempo control buttons
+        if (e.target.closest('.tempo-btn')) {
+            const speed = e.target.closest('.tempo-btn').getAttribute('data-speed');
+            const tempoButtons = e.target.parentNode.querySelectorAll('.tempo-btn');
+            
+            // Remove active class from all tempo buttons
+            tempoButtons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+            
+            // Set metronome BPM based on speed
+            switch(speed) {
+                case 'slow':
+                    metronome.setBPM(60);
+                    break;
+                case 'normal':
+                    metronome.setBPM(120);
+                    break;
+                case 'fast':
+                    metronome.setBPM(180);
+                    break;
+            }
+            
+            // Start metronome
+            if (!metronome.isPlaying) {
+                metronome.start();
+            }
+        }
+    });
+
+    // Tap exercise functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.tap-btn')) {
+            const targetId = e.target.closest('.tap-btn').getAttribute('data-target');
+            const tapExercise = document.getElementById(targetId);
+            
+            if (tapExercise) {
+                tapExercise.hidden = !tapExercise.hidden;
+            }
+        }
+        
+        // Tap target functionality
+        if (e.target.closest('.tap-target')) {
+            const tapTarget = e.target.closest('.tap-target');
+            
+            // Add ripple effect
+            tapTarget.style.animation = 'none';
+            setTimeout(() => {
+                tapTarget.style.animation = 'tap-ripple 0.6s ease-out';
+            }, 10);
+            
+            // Play tap sound
+            playTapSound();
+            
+            // Provide feedback
+            showModal('Great Timing!', 'You tapped on the beat! Keep practicing to develop your rhythm sense.', 'success');
+        }
+    });
+
+    // Conductor button functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.conductor-btn')) {
+            const targetId = e.target.closest('.conductor-btn').getAttribute('data-target');
+            const conductorControl = document.getElementById(targetId);
+            
+            if (conductorControl) {
+                conductorControl.hidden = !conductorControl.hidden;
+            }
+        }
+        
+        // Conductor beat functionality
+        if (e.target.closest('.conductor-beat')) {
+            const beat = e.target.closest('.conductor-beat');
+            beat.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                beat.style.transform = 'scale(1)';
+            }, 200);
+            
+            // Play conductor sound based on beat type
+            if (beat.classList.contains('strong')) {
+                playStrongBeat();
+            } else {
+                playWeakBeat();
+            }
+        }
+    });
+
+    // Harmony and composition functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.harmony-btn')) {
+            const targetId = e.target.closest('.harmony-btn').getAttribute('data-target');
+            const harmonyControl = document.getElementById(targetId);
+            
+            if (harmonyControl) {
+                harmonyControl.hidden = !harmonyControl.hidden;
+            }
+        }
+        
+        if (e.target.closest('.compose-btn')) {
+            const targetId = e.target.closest('.compose-btn').getAttribute('data-target');
+            const composeExercise = document.getElementById(targetId);
+            
+            if (composeExercise) {
+                composeExercise.hidden = !composeExercise.hidden;
+            }
+        }
+    });
+
+    // Emotion button functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.emotion-btn')) {
+            const emotion = e.target.closest('.emotion-btn').getAttribute('data-emotion');
+            const audioId = e.target.closest('.emotion-btn').getAttribute('data-audio-id');
+            
+            // Visual feedback
+            e.target.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                e.target.style.transform = 'scale(1)';
+            }, 200);
+            
+            // Play audio
+            if (audioId && audioMap[audioId]) {
+                playAudioSequence(audioId, 'session5');
+            }
+            
+            // Show emotion feedback
+            const emotionMessages = {
+                'excited': 'Fantastic energy! Your excitement really comes through in your voice!',
+                'curious': 'Perfect questioning tone! You sound genuinely interested.',
+                'surprised': 'Great expression of surprise! Very natural intonation.',
+                'doubtful': 'Excellent skeptical tone! You\'ve mastered subtle doubt.'
+            };
+            
+            showModal('Emotion Mastery', emotionMessages[emotion] || 'Great emotional expression!', 'success');
+        }
+    });
+
+    // Symphony and performance functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.symphony-play')) {
+            const audioId = e.target.closest('.symphony-play').getAttribute('data-audio-id');
+            
+            // Visual performance effect
+            e.target.style.animation = 'performance-glow 1s ease-in-out infinite';
+            
+            // Play symphony
+            if (audioId && audioMap[audioId]) {
+                playAudioSequence(audioId, 'session5');
+            }
+            
+            // Stop animation after 3 seconds
+            setTimeout(() => {
+                e.target.style.animation = '';
+            }, 3000);
+            
+            showModal('Bravo!', 'You conducted a beautiful speech symphony! Your timing and expression were excellent.', 'success');
+        }
+        
+        if (e.target.closest('.duet-btn')) {
+            const audioId = e.target.closest('.duet-btn').getAttribute('data-audio-id');
+            
+            // Play duet
+            if (audioId && audioMap[audioId]) {
+                playAudioSequence(audioId, 'session5');
+            }
+            
+            showModal('Beautiful Duet!', 'Perfect conversational harmony! You\'ve mastered the rhythm of natural dialogue.', 'success');
+        }
+    });
+
+    // Conductor interface functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.tempo-control, .dynamics-control, .expression-control')) {
+            const control = e.target.closest('.tempo-control, .dynamics-control, .expression-control');
+            const controls = control.parentNode.querySelectorAll('.tempo-control, .dynamics-control, .expression-control');
+            
+            // Remove active class from all controls
+            controls.forEach(ctrl => ctrl.classList.remove('active'));
+            control.classList.add('active');
+            
+            // Get control type and value
+            let controlType = control.getAttribute('data-tempo') || 
+                             control.getAttribute('data-dynamics') || 
+                             control.getAttribute('data-expression');
+            
+            // Handle tempo controls that don't have data attributes
+            if (!controlType && control.classList.contains('tempo-control')) {
+                const slider = control.querySelector('.tempo-slider');
+                const bpm = slider ? slider.value : '90';
+                controlType = `${bpm} BPM tempo`;
+            }
+            
+            if (controlType) {
+                showModal('Conductor Mode', `You selected ${controlType} style. Great choice for expressive speech!`, 'info');
+            }
+        }
+    });
+
+    // Freestyle composition functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.compose-melody')) {
+            const container = e.target.closest('.freestyle-exercise');
+            const input = container.querySelector('.composition-input');
+            const moodSelector = container.querySelector('.mood-selector');
+            const tempoSelector = container.querySelector('.tempo-selector');
+            
+            const text = input.value.trim();
+            const mood = moodSelector.value;
+            const tempo = tempoSelector.value;
+            
+            if (!text) {
+                showModal('Composition Needed', 'Please type a sentence to turn into a melody!', 'warning');
+                return;
+            }
+            
+            if (!mood || !tempo) {
+                showModal('Settings Needed', 'Please choose both mood and tempo for your composition!', 'warning');
+                return;
+            }
+            
+            // Simulate composition process
+            e.target.textContent = '🎵 Composing...';
+            e.target.disabled = true;
+            
+            setTimeout(() => {
+                e.target.textContent = '🎵 Compose & Play';
+                e.target.disabled = false;
+                
+                showModal('Composition Complete!', 
+                    `Beautiful! You've created a ${mood} melody at ${tempo} tempo with the text: "${text}"`, 
+                    'success');
+            }, 2000);
+        }
+    });
+
+    // Performance venue functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.performance-audio')) {
+            const venue = e.target.closest('.venue-card').getAttribute('data-venue');
+            const audioId = e.target.closest('.performance-audio').getAttribute('data-audio-id');
+            
+            // Visual performance effect
+            e.target.style.animation = 'performance-glow 1s ease-in-out infinite';
+            
+            // Play performance audio
+            if (audioId && audioMap[audioId]) {
+                playAudioSequence(audioId, 'session5');
+            }
+            
+            // Stop animation after 3 seconds
+            setTimeout(() => {
+                e.target.style.animation = '';
+            }, 3000);
+            
+            // Venue-specific feedback
+            const venueMessages = {
+                'coffee-shop': 'Perfect intimate performance! Your friendly, relaxed tone was spot-on for this cozy setting.',
+                'business-hall': 'Excellent professional delivery! You commanded the room with confidence and clarity.',
+                'grand-theater': 'Magnificent theatrical performance! Your dramatic expression captivated the entire audience!'
+            };
+            
+            showModal('Standing Ovation!', 
+                venueMessages[venue] || 'Incredible performance! You\'ve mastered speech in this venue!', 
+                'success');
+        }
+    });
+
+    // Ensemble functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.ensemble-btn')) {
+            const targetId = e.target.closest('.ensemble-btn').getAttribute('data-target');
+            const ensembleExercise = document.getElementById(targetId);
+            
+            if (ensembleExercise) {
+                ensembleExercise.hidden = !ensembleExercise.hidden;
+            }
+        }
+        
+        if (e.target.closest('.part-btn')) {
+            const part = e.target.closest('.part-btn').getAttribute('data-part');
+            const partButtons = e.target.parentNode.querySelectorAll('.part-btn');
+            
+            // Visual feedback
+            partButtons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+            
+            // Play part
+            playEnsemblePart(part);
+            
+            const partMessages = {
+                'phrase1': 'Great opening phrase! Perfect rhythm and timing.',
+                'pause': 'Excellent pause! Timing is everything in speech.',
+                'phrase2': 'Beautiful conclusion! Your intonation was perfect.',
+                'full': 'Magnificent full performance! You\'ve mastered the complete orchestration!'
+            };
+            
+            showModal('Ensemble Performance', partMessages[part], 'success');
+        }
+    });
+
+    // Helper functions for Session 5 audio
+    function playTapSound() {
+        if (window.AudioContext || window.webkitAudioContext) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioContext.destination);
+            
+            osc.frequency.value = 1000;
+            gain.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+            
+            osc.start();
+            osc.stop(audioContext.currentTime + 0.1);
+        }
+    }
+
+    function playStrongBeat() {
+        if (window.AudioContext || window.webkitAudioContext) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioContext.destination);
+            
+            osc.frequency.value = 800;
+            gain.gain.setValueAtTime(0.2, audioContext.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
+            
+            osc.start();
+            osc.stop(audioContext.currentTime + 0.2);
+        }
+    }
+
+    function playWeakBeat() {
+        if (window.AudioContext || window.webkitAudioContext) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioContext.destination);
+            
+            osc.frequency.value = 400;
+            gain.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+            
+            osc.start();
+            osc.stop(audioContext.currentTime + 0.1);
+        }
+    }
+
+    function playEnsemblePart(part) {
+        // Simulate playing different parts of the ensemble
+        const frequencies = {
+            'phrase1': 600,
+            'pause': 200,
+            'phrase2': 800,
+            'full': [600, 400, 800]
+        };
+        
+        if (window.AudioContext || window.webkitAudioContext) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            
+            if (part === 'full') {
+                // Play chord for full orchestra
+                frequencies[part].forEach((freq, index) => {
+                    const osc = audioContext.createOscillator();
+                    const gain = audioContext.createGain();
+                    
+                    osc.connect(gain);
+                    gain.connect(audioContext.destination);
+                    
+                    osc.frequency.value = freq;
+                    gain.gain.setValueAtTime(0.1, audioContext.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1);
+                    
+                    osc.start();
+                    osc.stop(audioContext.currentTime + 1);
+                });
+            } else {
+                // Play single note
+                const osc = audioContext.createOscillator();
+                const gain = audioContext.createGain();
+                
+                osc.connect(gain);
+                gain.connect(audioContext.destination);
+                
+                osc.frequency.value = frequencies[part];
+                gain.gain.setValueAtTime(0.1, audioContext.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+                
+                osc.start();
+                osc.stop(audioContext.currentTime + 0.5);
+            }
+        }
+    }
+
 }); 

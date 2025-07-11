@@ -77,7 +77,7 @@
             <button class="tab-btn" data-tab="session2">Session 2: Consonants</button>
             <button class="tab-btn" data-tab="session3">Session 3: Word Stress</button>
             <button class="tab-btn" data-tab="session4">Session 4: Intonation</button>
-            <button class="tab-btn" data-tab="session5">Session 5: Connected Speech</button>
+            <button class="tab-btn" data-tab="session5">Session 5: Speech Symphony</button>
             <button class="tab-btn" data-tab="session6">Session 6: Recap & Quiz</button>
         </nav>
         <section id="session1" class="tab-content active" aria-labelledby="Session 1">
@@ -1508,177 +1508,2106 @@
             </div>
         </section>
         <section id="session3" class="tab-content" aria-labelledby="Session 3">
-            <div class="exercise-section">
-                <h3>⚡ Word Stress Patterns</h3>
-                <p style="margin-bottom: 20px; font-size: 1.1em;">Learn to place stress correctly in multi-syllable words. Stressed syllables are shown in CAPS.</p>
-                
-                <div class="sound-pair">
-                    <div class="word-pair">
-                        <div class="word">
-                            <strong>im-POR-tant</strong>
-                            <span class="ipa">/ɪmˈpɔːtənt/</span>
-                        </div>
-                        <div class="word">
-                            <strong>de-VE-lop</strong>
-                            <span class="ipa">/dɪˈveləp/</span>
+            <div class="learning-container">
+                <!-- Session 3 Progress Header -->
+                <div class="learning-progress session3-progress" hidden>
+                    <div class="progress-header">
+                        <h2>Session 3: Word Stress</h2>
+                        <div class="progress-stats">
+                            <span class="current-step">Step 1 of 3</span>
+                            <span class="completion-rate">0% Complete</span>
                         </div>
                     </div>
-                    <button class="audio-btn" onclick="playAudio('stress-1')">
-                        🔊 Listen
-                    </button>
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Stress Patterns</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Practice</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Fluency</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="sound-pair">
-                    <div class="word-pair">
-                        <div class="word">
-                            <strong>PHO-to-graph</strong>
-                            <span class="ipa">/ˈfəʊtəɡrɑːf/</span>
-                        </div>
-                        <div class="word">
-                            <strong>pho-TOG-ra-phy</strong>
-                            <span class="ipa">/fəˈtɒɡrəfi/</span>
-                        </div>
-                    </div>
-                    <button class="audio-btn" onclick="playAudio('stress-2')">
-                        🔊 Listen
-                    </button>
+                <!-- STEP 1: VISUAL STRESS PATTERNS -->
+                <div class="learning-intro">
+                    <div class="intro-badge rhythm">🎵 Step 1</div>
+                    <h3>Visual Rhythm Patterns</h3>
+                    <p>See and feel the beat of British English stress patterns</p>
                 </div>
 
-                <div class="sentence-practice">
-                    <h4>📝 Stress Pattern Practice</h4>
-                    <div class="sentence">
-                        It's <span class="target-sound">im-POR-tant</span> to <span class="target-sound">de-VE-lop</span> good habits.
+                <!-- Visual Rhythm 1: Beat Visualization -->
+                <div class="rhythm-card" data-pattern="two-syllable" data-item="1">
+                    <div class="rhythm-header">
+                        <div class="rhythm-number">1</div>
+                        <div class="rhythm-title">
+                            <h4>Two-Beat Rhythm Patterns</h4>
+                            <div class="visual-pattern">
+                                <div class="beat-display">
+                                    <div class="beat strong" data-syllable="pre">●</div>
+                                    <div class="beat weak" data-syllable="sent">○</div>
+                                    <span class="pattern-label">PRE-sent</span>
+                                </div>
+                                <div class="vs-divider">vs</div>
+                                <div class="beat-display">
+                                    <div class="beat weak" data-syllable="pre">○</div>
+                                    <div class="beat strong" data-syllable="sent">●</div>
+                                    <span class="pattern-label">pre-SENT</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
                     </div>
-                    <div class="sentence">
-                        The <span class="target-sound">PHO-to-graph</span> showed excellent <span class="target-sound">pho-TOG-ra-phy</span>.
+                    
+                    <div class="rhythm-content">
+                        <div class="rhythm-visualizer">
+                            <div class="word-comparison">
+                                <div class="word-rhythm">
+                                    <div class="word-label">PRE-sent (noun)</div>
+                                    <div class="beat-bars">
+                                        <div class="bar strong" data-height="100%"></div>
+                                        <div class="bar weak" data-height="40%"></div>
+                                    </div>
+                                    <div class="waveform-display">
+                                        <canvas class="stress-waveform" width="120" height="60" data-word="present-noun"></canvas>
+                                    </div>
+                                    <div class="meaning">gift, object</div>
+                                </div>
+                                <div class="word-rhythm">
+                                    <div class="word-label">pre-SENT (verb)</div>
+                                    <div class="beat-bars">
+                                        <div class="bar weak" data-height="40%"></div>
+                                        <div class="bar strong" data-height="100%"></div>
+                                    </div>
+                                    <div class="waveform-display">
+                                        <canvas class="stress-waveform" width="120" height="60" data-word="present-verb"></canvas>
+                                    </div>
+                                    <div class="meaning">to give, show</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="rhythm-actions">
+                            <button class="rhythm-play-btn" data-audio-id="present-stress">
+                                <span class="btn-icon">🎵</span>
+                                <span class="btn-text">Play Rhythm</span>
+                            </button>
+                            <button class="beat-practice-btn" data-word="present">
+                                <span class="btn-icon">👏</span>
+                                <span class="btn-text">Clap the Beat</span>
+                            </button>
+                        </div>
+                        
+                        <div class="clapping-game" id="present-clapping" hidden>
+                            <div class="clap-instructions">Clap on the strong beats (●):</div>
+                            
+                            <div class="metronome-controls">
+                                <button class="metronome-btn" data-word="present">
+                                    <span class="metronome-icon">⏵</span>
+                                    <span class="metronome-text">Start Metronome</span>
+                                </button>
+                                <div class="tempo-control">
+                                    <label>Tempo:</label>
+                                    <input type="range" class="tempo-slider" min="60" max="120" value="90">
+                                    <span class="tempo-display">90 BPM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="clap-sequence">
+                                <div class="clap-beat strong" data-beat="1">PRE</div>
+                                <div class="clap-beat weak" data-beat="2">sent</div>
+                            </div>
+                            
+                            <div class="metronome-visual">
+                                <div class="beat-indicator" data-beat="1"></div>
+                                <div class="beat-indicator" data-beat="2"></div>
+                            </div>
+                            
+                            <div class="clap-feedback"></div>
+                        </div>
                     </div>
-                    <button class="audio-btn" onclick="playAudio('stress-sentences')">
-                        🔊 Play Sentences
-                    </button>
+                </div>
+
+                <!-- Visual Rhythm 2: Three-Beat Patterns -->
+                <div class="rhythm-card advanced" data-pattern="three-syllable" data-item="2">
+                    <div class="rhythm-header">
+                        <div class="rhythm-number">2</div>
+                        <div class="rhythm-title">
+                            <h4>Three-Beat Complex Rhythms</h4>
+                            <div class="visual-pattern">
+                                <div class="beat-display three-beat">
+                                    <div class="beat strong" data-syllable="pho">●</div>
+                                    <div class="beat weak" data-syllable="to">○</div>
+                                    <div class="beat weak" data-syllable="graph">○</div>
+                                    <span class="pattern-label">PHO-to-graph</span>
+                                </div>
+                                <div class="vs-divider">→</div>
+                                <div class="beat-display three-beat">
+                                    <div class="beat weak" data-syllable="pho">○</div>
+                                    <div class="beat strong" data-syllable="tog">●</div>
+                                    <div class="beat weak" data-syllable="ra">○</div>
+                                    <div class="beat weak" data-syllable="phy">○</div>
+                                    <span class="pattern-label">pho-TOG-ra-phy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="rhythm-content">
+                        <div class="rhythm-wave-display">
+                            <div class="word-wave">
+                                <div class="wave-label">PHO-to-graph</div>
+                                <div class="wave-pattern">
+                                    <div class="wave-peak high" data-syllable="pho"></div>
+                                    <div class="wave-valley" data-syllable="to"></div>
+                                    <div class="wave-valley" data-syllable="graph"></div>
+                                </div>
+                                <div class="wave-meaning">concrete thing</div>
+                            </div>
+                            <div class="transformation-arrow">shifts to →</div>
+                            <div class="word-wave">
+                                <div class="wave-label">pho-TOG-ra-phy</div>
+                                <div class="wave-pattern">
+                                    <div class="wave-valley" data-syllable="pho"></div>
+                                    <div class="wave-peak high" data-syllable="tog"></div>
+                                    <div class="wave-valley" data-syllable="ra"></div>
+                                    <div class="wave-valley" data-syllable="phy"></div>
+                                </div>
+                                <div class="wave-meaning">abstract concept</div>
+                            </div>
+                        </div>
+                        
+                        <div class="rhythm-actions">
+                            <button class="wave-play-btn" data-audio-id="photograph-stress">
+                                <span class="btn-icon">🌊</span>
+                                <span class="btn-text">Play Wave Pattern</span>
+                            </button>
+                            <button class="stress-shifter-btn" data-word="photograph">
+                                <span class="btn-icon">🔄</span>
+                                <span class="btn-text">Practice Stress Shift</span>
+                            </button>
+                        </div>
+                        
+                        <div class="stress-shift-game" id="photograph-shifting" hidden>
+                            <div class="shift-instructions">Click to shift the stress pattern:</div>
+                            
+                            <div class="metronome-controls">
+                                <button class="metronome-btn" data-word="photograph">
+                                    <span class="metronome-icon">⏵</span>
+                                    <span class="metronome-text">Start Metronome</span>
+                                </button>
+                                <div class="tempo-control">
+                                    <label>Tempo:</label>
+                                    <input type="range" class="tempo-slider" min="60" max="120" value="80">
+                                    <span class="tempo-display">80 BPM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="shift-word">
+                                <span class="syllable clickable" data-stress-pos="1">PHO</span>
+                                <span class="syllable clickable" data-stress-pos="2">to</span>
+                                <span class="syllable clickable" data-stress-pos="3">graph</span>
+                                <span class="word-type">(photograph)</span>
+                            </div>
+                            
+                            <div class="metronome-visual">
+                                <div class="beat-indicator" data-beat="1"></div>
+                                <div class="beat-indicator" data-beat="2"></div>
+                                <div class="beat-indicator" data-beat="3"></div>
+                            </div>
+                            
+                            <div class="shift-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stress Pattern 3: Compound Words -->
+                <div class="learning-card" data-pair="compound" data-item="3">
+                    <div class="card-header">
+                        <div class="card-number">3</div>
+                        <div class="card-title">
+                            <h4>Compound Word Stress</h4>
+                            <div class="phoneme-pair">
+                                <span class="phoneme primary">BLACKbird</span>
+                                <span class="vs">vs</span>
+                                <span class="phoneme secondary">black BIRD</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="phonetic-display">
+                            <div class="phonetic-item">
+                                <span class="word">BLACKbird</span>
+                                <span class="ipa">/ˈblækbɜːd/</span>
+                                <span class="description">one word - bird type</span>
+                            </div>
+                            <div class="phonetic-item">
+                                <span class="word">black BIRD</span>
+                                <span class="ipa">/blæk ˈbɜːd/</span>
+                                <span class="description">two words - description</span>
+                            </div>
+                        </div>
+                        
+                        <div class="primary-action">
+                            <button class="listen-btn primary" data-audio-id="compound-stress">
+                                <span class="btn-icon">🔊</span>
+                                <span class="btn-text">Listen & Practice</span>
+                            </button>
+                        </div>
+                        
+                        <div class="secondary-actions">
+                            <button class="help-btn" data-target="compound-help">
+                                <span class="btn-icon">💡</span>
+                                <span class="btn-text">Tips</span>
+                            </button>
+                            <button class="examples-btn" data-target="compound-examples">
+                                <span class="btn-icon">📝</span>
+                                <span class="btn-text">Examples</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-help" id="compound-help" hidden>
+                        <p><strong>Focus:</strong> Compound words stress the first part, phrases stress the second.</p>
+                        <p><strong>Tip:</strong> If it's one concept, stress the first part.</p>
+                    </div>
+                    
+                    <div class="card-examples" id="compound-examples" hidden>
+                        <div class="example-pairs">
+                            <span>GREENhouse → green HOUSE</span>
+                            <span>HOTdog → hot DOG</span>
+                            <span>UPstairs → up THERE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2: INTERACTIVE PRACTICE -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 1 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 2: Interactive Practice</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro step2">
+                    <div class="intro-badge step2">🎯 Step 2</div>
+                    <h3>Stress Placement Practice</h3>
+                    <p>Practice identifying and placing stress correctly with interactive exercises</p>
+                </div>
+
+                <!-- Interactive Stress Practice -->
+                <div class="interactive-practice-playground">
+                    <!-- Practice Exercise 1: Stress Identification -->
+                    <div class="practice-exercise-card" data-pair="stress-identify" data-item="1">
+                        <div class="exercise-card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title">
+                                <h4>Identify the Stress</h4>
+                                <p>Listen and click the stressed syllable</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stress-exercise">
+                            <div class="word-breakdown">
+                                <span class="syllable clickable" data-syllable="1">im</span>
+                                <span class="syllable clickable" data-syllable="2">por</span>
+                                <span class="syllable clickable" data-syllable="3">tant</span>
+                            </div>
+                            <button class="play-word-btn" data-audio-id="important-stress">🎧 Listen</button>
+                            <div class="exercise-feedback" hidden></div>
+                        </div>
+                        
+                        <!-- Additional Practice Words -->
+                        <div class="additional-practice" hidden>
+                            <div class="practice-word" data-word="development">
+                                <h5>Practice Word 2: Development</h5>
+                                <div class="word-breakdown">
+                                    <span class="syllable clickable" data-syllable="1">de</span>
+                                    <span class="syllable clickable" data-syllable="2">vel</span>
+                                    <span class="syllable clickable" data-syllable="3">op</span>
+                                    <span class="syllable clickable" data-syllable="4">ment</span>
+                                </div>
+                                <button class="play-word-btn" data-audio-id="development-stress">🎧 Listen</button>
+                                <div class="exercise-feedback" hidden></div>
+                            </div>
+                            
+                            <div class="practice-word" data-word="education">
+                                <h5>Practice Word 3: Education</h5>
+                                <div class="word-breakdown">
+                                    <span class="syllable clickable" data-syllable="1">ed</span>
+                                    <span class="syllable clickable" data-syllable="2">u</span>
+                                    <span class="syllable clickable" data-syllable="3">ca</span>
+                                    <span class="syllable clickable" data-syllable="4">tion</span>
+                                </div>
+                                <button class="play-word-btn" data-audio-id="education-stress">🎧 Listen</button>
+                                <div class="exercise-feedback" hidden></div>
+                            </div>
+                        </div>
+                        
+                        <button class="expand-practice-btn" data-target="additional-practice">
+                            <span class="btn-text">Practice More Words</span>
+                            <span class="btn-icon">+</span>
+                        </button>
+                    </div>
+
+                    <!-- Practice Exercise 2: Stress Patterns -->
+                    <div class="practice-exercise-card" data-pair="stress-patterns" data-item="2">
+                        <div class="exercise-card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title">
+                                <h4>Match Stress Patterns</h4>
+                                <p>Drag words to their correct stress pattern</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="pattern-matching">
+                            <div class="stress-patterns">
+                                <div class="pattern-box" data-pattern="1-2">
+                                    <div class="pattern-label">o-O (weak-STRONG)</div>
+                                    <div class="drop-zone" data-accepts="1-2"></div>
+                                </div>
+                                <div class="pattern-box" data-pattern="2-1">
+                                    <div class="pattern-label">O-o (STRONG-weak)</div>
+                                    <div class="drop-zone" data-accepts="2-1"></div>
+                                </div>
+                            </div>
+                            <div class="word-bank">
+                                <div class="draggable-word" data-pattern="1-2">hotel</div>
+                                <div class="draggable-word" data-pattern="2-1">husband</div>
+                                <div class="draggable-word" data-pattern="1-2">police</div>
+                                <div class="draggable-word" data-pattern="2-1">table</div>
+                                <div class="draggable-word" data-pattern="1-2">machine</div>
+                                <div class="draggable-word" data-pattern="2-1">happy</div>
+                                <div class="draggable-word" data-pattern="1-2">complete</div>
+                                <div class="draggable-word" data-pattern="2-1">butter</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Exercise 3: Sentence Stress -->
+                    <div class="practice-exercise-card" data-pair="sentence-stress" data-item="3">
+                        <div class="exercise-card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title">
+                                <h4>Sentence Stress Practice</h4>
+                                <p>Practice stress in connected speech</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="sentence-stress-practice">
+                            <div class="practice-sentence">
+                                <div class="stress-version">The <span class="stress-word" data-stress="photograph">PHO-to-graph</span> showed excellent <span class="stress-word" data-stress="photography">pho-TOG-ra-phy</span>.</div>
+                                <div class="normal-version">The photograph showed excellent photography.</div>
+                            </div>
+                            <button class="practice-audio" data-audio-id="sentence-stress-1">🎧 Listen & Repeat</button>
+                            
+                            <div class="stress-placement-game">
+                                <div class="game-instructions">
+                                    <p>Drag the stress markers (●) to the correct syllables:</p>
+                                </div>
+                                
+                                <div class="sentence-breakdown">
+                                    <div class="word-group">
+                                        <div class="word-label">The</div>
+                                        <div class="syllable-slots">
+                                            <div class="syllable-slot weak" data-syllable="the">The</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="word-group">
+                                        <div class="word-label">photograph</div>
+                                        <div class="syllable-slots">
+                                            <div class="syllable-slot strong" data-syllable="pho" data-correct="true">PHO</div>
+                                            <div class="syllable-slot weak" data-syllable="to">to</div>
+                                            <div class="syllable-slot weak" data-syllable="graph">graph</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="word-group">
+                                        <div class="word-label">showed</div>
+                                        <div class="syllable-slots">
+                                            <div class="syllable-slot weak" data-syllable="showed">showed</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="word-group">
+                                        <div class="word-label">excellent</div>
+                                        <div class="syllable-slots">
+                                            <div class="syllable-slot strong" data-syllable="ex" data-correct="true">EX</div>
+                                            <div class="syllable-slot weak" data-syllable="cel">cel</div>
+                                            <div class="syllable-slot weak" data-syllable="lent">lent</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="word-group">
+                                        <div class="word-label">photography</div>
+                                        <div class="syllable-slots">
+                                            <div class="syllable-slot weak" data-syllable="pho">pho</div>
+                                            <div class="syllable-slot strong" data-syllable="tog" data-correct="true">TOG</div>
+                                            <div class="syllable-slot weak" data-syllable="ra">ra</div>
+                                            <div class="syllable-slot weak" data-syllable="phy">phy</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stress-markers">
+                                    <div class="marker-bank">
+                                        <div class="stress-marker draggable" data-marker="1">●</div>
+                                        <div class="stress-marker draggable" data-marker="2">●</div>
+                                        <div class="stress-marker draggable" data-marker="3">●</div>
+                                    </div>
+                                    <div class="marker-instructions">Drag 3 stress markers to the correct syllables</div>
+                                </div>
+                            </div>
+                            
+                            <div class="stress-feedback" hidden></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: FLUENCY BUILDING -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 2 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 3: Fluency Building</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro step3">
+                    <div class="intro-badge step3">🚀 Step 3</div>
+                    <h3>Professional Context Practice</h3>
+                    <p>Build fluency with stress patterns in professional and everyday situations</p>
+                </div>
+
+                <!-- Professional Context Cards -->
+                <div class="contextual-practice">
+                    <!-- Business Context -->
+                    <div class="context-card" data-context="business" data-item="1">
+                        <div class="context-header">
+                            <div class="context-badge">💼 Business</div>
+                            <div class="context-title">
+                                <h4>Presentation Clarity</h4>
+                                <p>Clear stress for professional impact</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-content">
+                            <div class="scenario-text">
+                                <div class="stress-version">"It's <span class="stress-highlight">im-POR-tant</span> to <span class="stress-highlight">de-VE-lop</span> a comprehensive <span class="stress-highlight">STRA-te-gy</span> for <span class="stress-highlight">ec-o-NOM-ic</span> growth."</div>
+                                <div class="normal-version">"It's important to develop a comprehensive strategy for economic growth."</div>
+                            </div>
+                            <button class="context-audio" data-audio-id="business-stress">
+                                <span class="btn-icon">🎧</span>
+                                <span class="btn-text">Practice Professional Speech</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Academic Context -->
+                    <div class="context-card" data-context="academic" data-item="2">
+                        <div class="context-header">
+                            <div class="context-badge">🎓 Academic</div>
+                            <div class="context-title">
+                                <h4>Teaching & Learning</h4>
+                                <p>Clear pronunciation for education</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-content">
+                            <div class="scenario-text">
+                                <div class="stress-version">"The <span class="stress-highlight">u-ni-VER-si-ty</span> offers <span class="stress-highlight">op-por-TU-ni-ties</span> in <span class="stress-highlight">pho-TOG-ra-phy</span> and <span class="stress-highlight">PSY-cho-lo-gy</span>."</div>
+                                <div class="normal-version">"The university offers opportunities in photography and psychology."</div>
+                            </div>
+                            <button class="context-audio" data-audio-id="academic-stress">
+                                <span class="btn-icon">🎧</span>
+                                <span class="btn-text">Practice Academic Speech</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Daily Life Context -->
+                    <div class="context-card" data-context="daily" data-item="3">
+                        <div class="context-header">
+                            <div class="context-badge">🏠 Daily Life</div>
+                            <div class="context-title">
+                                <h4>Everyday Conversations</h4>
+                                <p>Natural stress in casual speech</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-content">
+                            <div class="scenario-text">
+                                <div class="stress-version">"I need to <span class="stress-highlight">re-CORD</span> this <span class="stress-highlight">RE-cord</span> and <span class="stress-highlight">pre-SENT</span> it as a <span class="stress-highlight">PRE-sent</span>."</div>
+                                <div class="normal-version">"I need to record this record and present it as a present."</div>
+                            </div>
+                            <button class="context-audio" data-audio-id="daily-stress">
+                                <span class="btn-icon">🎧</span>
+                                <span class="btn-text">Practice Casual Speech</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session 3 Completion -->
+                <div class="session-completion" hidden>
+                    <div class="completion-badge">
+                        <span class="completion-icon">🎯</span>
+                        <span class="completion-text">Session 3 Complete!</span>
+                    </div>
+                    <div class="completion-summary">
+                        <p>Excellent work! You've mastered word stress patterns in British English.</p>
+                        <div class="next-session-prompt">
+                            <p>Ready for the next challenge?</p>
+                            <button class="next-session-btn" data-tab="session4">
+                                Continue to Session 4: Intonation →
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="session4" class="tab-content" aria-labelledby="Session 4">
-            <div class="exercise-section">
-                <h3>🎶 Intonation & Melody</h3>
-                <p style="margin-bottom: 20px; font-size: 1.1em;">Practice rising and falling tones to add natural melody to your speech. ↗ = rising, ↘ = falling</p>
-                
-                <div class="sentence-practice">
-                    <h4>📝 Intonation Practice</h4>
-                    <div class="sentence">
-                        <strong>Statement:</strong> I'm going to the market ↘
+            <div class="learning-container">
+                <!-- Session 4 Progress Header -->
+                <div class="learning-progress session4-progress" hidden>
+                    <div class="progress-header">
+                        <h2>Session 4: Intonation</h2>
+                        <div class="progress-stats">
+                            <span class="current-step">Step 1 of 4</span>
+                            <span class="completion-rate">0% Complete</span>
+                        </div>
                     </div>
-                    <div class="sentence">
-                        <strong>Yes/No Question:</strong> Are you going to the market? ↗
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Emotion Wheel</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Situation Matcher</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Conversation Builder</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="4">
+                            <div class="step-number">4</div>
+                            <div class="step-label">Tone Theater</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sentence">
-                        <strong>Wh-Question:</strong> Where are you going? ↘
-                    </div>
-                    <div class="sentence">
-                        <strong>Polite Request:</strong> Could you help me, please? ↗
-                    </div>
-                    <button class="audio-btn" onclick="playAudio('intonation-patterns')">
-                        🔊 Play All Patterns
-                    </button>
                 </div>
 
-                <div style="background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                    <h4>💡 Intonation Tips</h4>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="margin: 10px 0;">• Statements end with falling tone ↘</li>
-                        <li style="margin: 10px 0;">• Yes/No questions end with rising tone ↗</li>
-                        <li style="margin: 10px 0;">• Wh-questions usually end with falling tone ↘</li>
-                        <li style="margin: 10px 0;">• Lists rise until the last item ↗,↗,↘</li>
-                    </ul>
+                <!-- STEP 1: EMOTION WHEEL -->
+                <div class="learning-intro emotion-wheel">
+                    <div class="intro-badge emotion">🎭 Step 1</div>
+                    <h3>Emotion Wheel - Learn Tone Through Feelings</h3>
+                    <p>Discover how different emotions shape your intonation patterns</p>
+                </div>
+
+                <!-- Interactive Emotion Wheel -->
+                <div class="emotion-wheel-container">
+                    <div class="emotion-wheel" data-item="1">
+                        <div class="wheel-center">
+                            <div class="center-text">
+                                <span class="wheel-title">Emotion</span>
+                                <span class="wheel-subtitle">Wheel</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Emotion Segments -->
+                        <div class="emotion-segment happy" data-emotion="happy" data-tone="rising">
+                            <div class="segment-content">
+                                <span class="emotion-icon">😊</span>
+                                <span class="emotion-label">Happy</span>
+                                <span class="tone-pattern">↗</span>
+                            </div>
+                        </div>
+                        <div class="emotion-segment excited" data-emotion="excited" data-tone="high-rise">
+                            <div class="segment-content">
+                                <span class="emotion-icon">🤩</span>
+                                <span class="emotion-label">Excited</span>
+                                <span class="tone-pattern">↗↗</span>
+                            </div>
+                        </div>
+                        <div class="emotion-segment curious" data-emotion="curious" data-tone="rising">
+                            <div class="segment-content">
+                                <span class="emotion-icon">🤔</span>
+                                <span class="emotion-label">Curious</span>
+                                <span class="tone-pattern">↗</span>
+                            </div>
+                        </div>
+                        <div class="emotion-segment confident" data-emotion="confident" data-tone="falling">
+                            <div class="segment-content">
+                                <span class="emotion-icon">💪</span>
+                                <span class="emotion-label">Confident</span>
+                                <span class="tone-pattern">↘</span>
+                            </div>
+                        </div>
+                        <div class="emotion-segment disappointed" data-emotion="disappointed" data-tone="low-fall">
+                            <div class="segment-content">
+                                <span class="emotion-icon">😞</span>
+                                <span class="emotion-label">Disappointed</span>
+                                <span class="tone-pattern">↘↘</span>
+                            </div>
+                        </div>
+                        <div class="emotion-segment surprised" data-emotion="surprised" data-tone="rise-fall">
+                            <div class="segment-content">
+                                <span class="emotion-icon">😮</span>
+                                <span class="emotion-label">Surprised</span>
+                                <span class="tone-pattern">↗↘</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emotion-practice-area">
+                        <div class="practice-prompt">
+                            <h4>Click an emotion to practice its tone</h4>
+                            <p>Each emotion has a natural intonation pattern</p>
+                        </div>
+                        <div class="emotion-example" id="emotion-example" hidden>
+                            <div class="example-sentence"></div>
+                            <div class="tone-visualization"></div>
+                            <button class="emotion-audio-btn" data-audio-id="">
+                                <span class="btn-icon">🎵</span>
+                                <span class="btn-text">Practice This Emotion</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2: SITUATION MATCHER -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 1 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 2: Situation Matcher</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro situation-matcher">
+                    <div class="intro-badge situation">🎯 Step 2</div>
+                    <h3>Situation Matcher - Match Tones to Contexts</h3>
+                    <p>Learn to choose the perfect tone for different social situations</p>
+                </div>
+
+                <!-- Situation Matching Game -->
+                <div class="situation-matcher-game">
+                    <div class="matching-exercise" data-item="1">
+                        <div class="exercise-header">
+                            <h4>Drag the Right Tone to Each Situation</h4>
+                            <div class="score-display">Score: <span id="match-score">0</span>/6</div>
+                        </div>
+                        
+                        <div class="matching-grid">
+                            <div class="situations-column">
+                                <div class="situation-card" data-situation="job-interview">
+                                    <div class="situation-icon">💼</div>
+                                    <div class="situation-text">Job Interview</div>
+                                    <div class="drop-zone" data-correct-tone="confident-falling"></div>
+                                </div>
+                                <div class="situation-card" data-situation="first-date">
+                                    <div class="situation-icon">💕</div>
+                                    <div class="situation-text">First Date</div>
+                                    <div class="drop-zone" data-correct-tone="curious-rising"></div>
+                                </div>
+                                <div class="situation-card" data-situation="family-dinner">
+                                    <div class="situation-icon">🍽️</div>
+                                    <div class="situation-text">Family Dinner</div>
+                                    <div class="drop-zone" data-correct-tone="warm-rising"></div>
+                                </div>
+                                <div class="situation-card" data-situation="customer-complaint">
+                                    <div class="situation-icon">😤</div>
+                                    <div class="situation-text">Customer Complaint</div>
+                                    <div class="drop-zone" data-correct-tone="empathetic-falling"></div>
+                                </div>
+                                <div class="situation-card" data-situation="celebration">
+                                    <div class="situation-icon">🎉</div>
+                                    <div class="situation-text">Celebration</div>
+                                    <div class="drop-zone" data-correct-tone="excited-high-rise"></div>
+                                </div>
+                                <div class="situation-card" data-situation="apology">
+                                    <div class="situation-icon">🙏</div>
+                                    <div class="situation-text">Apology</div>
+                                    <div class="drop-zone" data-correct-tone="sincere-fall-rise"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="tones-column">
+                                <div class="tone-card draggable" data-tone="confident-falling">
+                                    <div class="tone-pattern">↘</div>
+                                    <div class="tone-label">Confident</div>
+                                </div>
+                                <div class="tone-card draggable" data-tone="curious-rising">
+                                    <div class="tone-pattern">↗</div>
+                                    <div class="tone-label">Curious</div>
+                                </div>
+                                <div class="tone-card draggable" data-tone="warm-rising">
+                                    <div class="tone-pattern">↗</div>
+                                    <div class="tone-label">Warm</div>
+                                </div>
+                                <div class="tone-card draggable" data-tone="empathetic-falling">
+                                    <div class="tone-pattern">↘</div>
+                                    <div class="tone-label">Empathetic</div>
+                                </div>
+                                <div class="tone-card draggable" data-tone="excited-high-rise">
+                                    <div class="tone-pattern">↗↗</div>
+                                    <div class="tone-label">Excited</div>
+                                </div>
+                                <div class="tone-card draggable" data-tone="sincere-fall-rise">
+                                    <div class="tone-pattern">↘↗</div>
+                                    <div class="tone-label">Sincere</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="matching-feedback" id="matching-feedback" hidden></div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: CONVERSATION BUILDER -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 2 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 3: Conversation Builder</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro conversation-builder">
+                    <div class="intro-badge conversation">💬 Step 3</div>
+                    <h3>Conversation Builder - Build Dialogues with Proper Intonation</h3>
+                    <p>Create natural conversations by choosing the right tone for each line</p>
+                </div>
+
+                <!-- Conversation Builder Tool -->
+                <div class="conversation-builder-tool">
+                    <div class="builder-exercise" data-item="1">
+                        <div class="scenario-selector">
+                            <h4>Choose Your Conversation Scenario</h4>
+                            <div class="scenario-buttons">
+                                <button class="scenario-btn active" data-scenario="restaurant">🍽️ Restaurant</button>
+                                <button class="scenario-btn" data-scenario="workplace">💼 Workplace</button>
+                                <button class="scenario-btn" data-scenario="social">🎉 Social</button>
+                            </div>
+                        </div>
+                        
+                        <div class="conversation-canvas" id="conversation-canvas">
+                            <div class="conversation-scenario restaurant active" data-scenario="restaurant">
+                                <div class="scenario-header">
+                                    <h5>Restaurant Conversation</h5>
+                                    <p>You're dining with a friend at a new restaurant</p>
+                                </div>
+                                <div class="conversation-lines">
+                                    <div class="line-builder">
+                                        <div class="line-prompt">Your friend says: "This place is really busy tonight"</div>
+                                        <div class="response-options">
+                                            <button class="response-option" data-tone="rising" data-correct="true">
+                                                "I know, right? ↗" <span class="tone-note">(agreeing + enthusiasm)</span>
+                                            </button>
+                                            <button class="response-option" data-tone="falling" data-correct="false">
+                                                "I know, right ↘" <span class="tone-note">(stating fact)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="line-builder">
+                                        <div class="line-prompt">Waiter approaches: "Are you ready to order?"</div>
+                                        <div class="response-options">
+                                            <button class="response-option" data-tone="rising" data-correct="true">
+                                                "Could we have a few more minutes? ↗" <span class="tone-note">(polite request)</span>
+                                            </button>
+                                            <button class="response-option" data-tone="falling" data-correct="false">
+                                                "We need more time ↘" <span class="tone-note">(demanding)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="line-builder">
+                                        <div class="line-prompt">Friend asks: "What are you thinking of getting?"</div>
+                                        <div class="response-options">
+                                            <button class="response-option" data-tone="rise-fall" data-correct="true">
+                                                "Hmm, maybe the salmon? ↗↘" <span class="tone-note">(considering)</span>
+                                            </button>
+                                            <button class="response-option" data-tone="falling" data-correct="false">
+                                                "The salmon ↘" <span class="tone-note">(decided)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="conversation-playback" id="conversation-playback" hidden>
+                            <h5>Your Conversation:</h5>
+                            <div class="playback-lines"></div>
+                            <button class="playback-btn" id="play-conversation">
+                                <span class="btn-icon">🎵</span>
+                                <span class="btn-text">Play Full Conversation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 4: TONE THEATER -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 3 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 4: Tone Theater</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro tone-theater">
+                    <div class="intro-badge theater">🎭 Step 4</div>
+                    <h3>Tone Theater - Role-Play with Different Emotions</h3>
+                    <p>Act out different characters and emotions to master expressive intonation</p>
+                </div>
+
+                <!-- Tone Theater Stage -->
+                <div class="tone-theater-stage">
+                    <div class="theater-exercise" data-item="1">
+                        <div class="character-selector">
+                            <h4>Choose Your Character</h4>
+                            <div class="character-cards">
+                                <div class="character-card" data-character="enthusiastic-teacher">
+                                    <div class="character-avatar">👩‍🏫</div>
+                                    <div class="character-name">Enthusiastic Teacher</div>
+                                    <div class="character-trait">Encouraging, upbeat tones</div>
+                                </div>
+                                <div class="character-card" data-character="grumpy-customer">
+                                    <div class="character-avatar">😤</div>
+                                    <div class="character-name">Grumpy Customer</div>
+                                    <div class="character-trait">Complaining, demanding tones</div>
+                                </div>
+                                <div class="character-card" data-character="excited-child">
+                                    <div class="character-avatar">🧒</div>
+                                    <div class="character-name">Excited Child</div>
+                                    <div class="character-trait">High-energy, questioning tones</div>
+                                </div>
+                                <div class="character-card" data-character="calm-counselor">
+                                    <div class="character-avatar">🧘</div>
+                                    <div class="character-name">Calm Counselor</div>
+                                    <div class="character-trait">Soothing, supportive tones</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="theater-stage" id="theater-stage" hidden>
+                            <div class="stage-header">
+                                <div class="current-character"></div>
+                                <div class="scene-counter">Scene 1 of 3</div>
+                            </div>
+                            <div class="stage-scenario">
+                                <div class="scenario-text"></div>
+                                <div class="line-to-perform"></div>
+                            </div>
+                            <div class="performance-actions">
+                                <button class="record-btn" id="record-performance">
+                                    <span class="btn-icon">🎤</span>
+                                    <span class="btn-text">Record Your Performance</span>
+                                </button>
+                                <button class="example-btn" id="hear-example">
+                                    <span class="btn-icon">🎧</span>
+                                    <span class="btn-text">Hear Example</span>
+                                </button>
+                            </div>
+                            <div class="performance-feedback" id="performance-feedback" hidden></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session 4 Completion -->
+                <div class="session-completion" hidden>
+                    <div class="completion-badge">
+                        <span class="completion-icon">🎵</span>
+                        <span class="completion-text">Session 4 Complete!</span>
+                    </div>
+                    <div class="completion-summary">
+                        <p>Excellent! You've mastered the melody of British English intonation.</p>
+                        <div class="next-session-prompt">
+                            <p>Ready for the final pronunciation challenges?</p>
+                            <button class="next-session-btn" data-tab="session5">
+                                Continue to Session 5: Speech Symphony →
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="session5" class="tab-content" aria-labelledby="Session 5">
-            <div class="exercise-section">
-                <h3>🔗 Connected Speech Patterns</h3>
-                <p style="margin-bottom: 20px; font-size: 1.1em;">Learn to link words naturally for smooth, fluent speech. Practice these common linking patterns.</p>
-                
-                <div class="sound-pair">
-                    <div class="word-pair">
-                        <div class="word">
-                            <strong>go out</strong>
-                            <span class="ipa">go‿out</span>
-                        </div>
-                        <div class="word">
-                            <strong>an apple</strong>
-                            <span class="ipa">an‿apple</span>
+            <div class="learning-container">
+                <!-- Session 5 Progress Header -->
+                <div class="learning-progress session5-progress" hidden>
+                    <div class="progress-header">
+                        <h2>Session 5: Speech Symphony</h2>
+                        <div class="progress-stats">
+                            <span class="current-step">Step 1 of 3</span>
+                            <span class="completion-rate">0% Complete</span>
                         </div>
                     </div>
-                    <button class="audio-btn" onclick="playAudio('linking-1')">
-                        🔊 Listen to Linking
-                    </button>
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Rhythm Studio</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                    <span class="dot" data-item="4"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Melody Maker</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                    <span class="dot" data-item="4"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Live Performance</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="sound-pair">
-                    <div class="word-pair">
-                        <div class="word">
-                            <strong>turn off</strong>
-                            <span class="ipa">turn‿off</span>
-                        </div>
-                        <div class="word">
-                            <strong>look at it</strong>
-                            <span class="ipa">look‿at‿it</span>
-                        </div>
-                    </div>
-                    <button class="audio-btn" onclick="playAudio('linking-2')">
-                        🔊 Listen to Linking
-                    </button>
+                <!-- STEP 1: RHYTHM STUDIO -->
+                <div class="learning-intro rhythm-studio">
+                    <div class="intro-badge rhythm">🎵 Step 1</div>
+                    <h3>Rhythm Studio - Master the Beat of English</h3>
+                    <p>Learn to hear and feel the natural rhythm patterns in British English speech</p>
                 </div>
 
-                <div class="sentence-practice">
-                    <h4>📝 Connected Speech Practice</h4>
-                    <div class="sentence">
-                        I want to <span class="target-sound">go‿out</span> and buy <span class="target-sound">an‿apple</span>.
+                <!-- Rhythm Pattern 1: Stress-Timed Language -->
+                <div class="learning-card rhythm-card" data-pair="stress-timing" data-item="1">
+                    <div class="card-header">
+                        <div class="card-number">1</div>
+                        <div class="card-title">
+                            <h4>The English Beat</h4>
+                            <div class="rhythm-pattern">
+                                <span class="beat strong">STRONG</span>
+                                <span class="beat weak">weak</span>
+                                <span class="beat weak">weak</span>
+                                <span class="beat strong">STRONG</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
                     </div>
-                    <div class="sentence">
-                        Please <span class="target-sound">turn‿off</span> the light and <span class="target-sound">look‿at‿it</span>.
+                    
+                    <div class="card-content">
+                        <div class="rhythm-display">
+                            <div class="rhythm-example">
+                                <span class="rhythm-text">I want to go to the cinema</span>
+                                <div class="beat-pattern">
+                                    <span class="beat-mark strong">I</span>
+                                    <span class="beat-mark weak">want to</span>
+                                    <span class="beat-mark strong">GO</span>
+                                    <span class="beat-mark weak">to the</span>
+                                    <span class="beat-mark strong">CIN</span>
+                                    <span class="beat-mark weak">ema</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="primary-action">
+                            <button class="listen-btn primary" data-audio-id="stress-timing">
+                                <span class="btn-icon">🥁</span>
+                                <span class="btn-text">Feel the Beat</span>
+                            </button>
+                        </div>
+                        
+                        <div class="secondary-actions">
+                            <button class="metronome-btn" data-target="metronome-1">
+                                <span class="btn-icon">⏱️</span>
+                                <span class="btn-text">Metronome</span>
+                            </button>
+                            <button class="tap-btn" data-target="tap-rhythm-1">
+                                <span class="btn-icon">👆</span>
+                                <span class="btn-text">Tap Along</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="sentence">
-                        <span class="target-sound">Come‿on</span>, let's <span class="target-sound">check‿it‿out</span> together.
+                    
+                    <div class="rhythm-tools">
+                        <div class="metronome-control" id="metronome-1" hidden>
+                            <div class="metronome-visual">
+                                <div class="metronome-pendulum"></div>
+                            </div>
+                            <div class="tempo-control">
+                                <button class="tempo-btn" data-speed="slow">Slow</button>
+                                <button class="tempo-btn" data-speed="normal">Normal</button>
+                                <button class="tempo-btn" data-speed="fast">Fast</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tap-exercise" id="tap-rhythm-1" hidden>
+                            <p>Tap the screen on each stressed syllable:</p>
+                            <div class="tap-zone">
+                                <div class="tap-target" data-beat="1">I</div>
+                                <div class="tap-target" data-beat="2">GO</div>
+                                <div class="tap-target" data-beat="3">CIN</div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="audio-btn" onclick="playAudio('connected-sentences')">
-                        🔊 Play Connected Speech
-                    </button>
                 </div>
 
-                <div style="background: linear-gradient(135deg, #fd79a8, #e84393); color: white; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                    <h4>🎯 Linking Rules</h4>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="margin: 10px 0;">• Consonant + Vowel: "turn‿off"</li>
-                        <li style="margin: 10px 0;">• Vowel + Vowel: "go‿out"</li>
-                        <li style="margin: 10px 0;">• Same consonants: "some‿money"</li>
-                        <li style="margin: 10px 0;">• Function words reduce: "to" → "tə"</li>
-                    </ul>
+                <!-- Rhythm Pattern 2: Weak Forms Music -->
+                <div class="learning-card rhythm-card" data-pair="weak-forms" data-item="2">
+                    <div class="card-header">
+                        <div class="card-number">2</div>
+                        <div class="card-title">
+                            <h4>Weak Forms Symphony</h4>
+                            <div class="rhythm-pattern">
+                                <span class="beat strong">STRONG</span>
+                                <span class="beat weak">də</span>
+                                <span class="beat weak">ən</span>
+                                <span class="beat strong">STRONG</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="rhythm-display">
+                            <div class="rhythm-example">
+                                <span class="rhythm-text">I can and I will</span>
+                                <div class="beat-pattern">
+                                    <span class="beat-mark strong">I</span>
+                                    <span class="beat-mark weak">kən</span>
+                                    <span class="beat-mark weak">ən</span>
+                                    <span class="beat-mark strong">I</span>
+                                    <span class="beat-mark strong">WILL</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="primary-action">
+                            <button class="listen-btn primary" data-audio-id="weak-forms">
+                                <span class="btn-icon">🎼</span>
+                                <span class="btn-text">Play the Melody</span>
+                            </button>
+                        </div>
+                        
+                        <div class="secondary-actions">
+                            <button class="metronome-btn" data-target="metronome-2">
+                                <span class="btn-icon">⏱️</span>
+                                <span class="btn-text">Metronome</span>
+                            </button>
+                            <button class="conductor-btn" data-target="conductor-2">
+                                <span class="btn-icon">🎺</span>
+                                <span class="btn-text">Conduct</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="rhythm-tools">
+                        <div class="metronome-control" id="metronome-2" hidden>
+                            <div class="weak-forms-guide">
+                                <div class="form-pair">
+                                    <span class="strong-form">can</span> → <span class="weak-form">kən</span>
+                                </div>
+                                <div class="form-pair">
+                                    <span class="strong-form">and</span> → <span class="weak-form">ən</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="conductor-exercise" id="conductor-2" hidden>
+                            <p>Conduct the rhythm with your hand:</p>
+                            <div class="conductor-zone">
+                                <div class="conductor-beat strong">DOWN</div>
+                                <div class="conductor-beat weak">up</div>
+                                <div class="conductor-beat weak">up</div>
+                                <div class="conductor-beat strong">DOWN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhythm Pattern 3: Linking Melodies -->
+                <div class="learning-card rhythm-card" data-pair="linking-melodies" data-item="3">
+                    <div class="card-header">
+                        <div class="card-number">3</div>
+                        <div class="card-title">
+                            <h4>Linking Melodies</h4>
+                            <div class="rhythm-pattern">
+                                <span class="beat connected">turn♪off</span>
+                                <span class="beat connected">pick♪up</span>
+                                <span class="beat connected">come♪on</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="rhythm-display">
+                            <div class="rhythm-example">
+                                <span class="rhythm-text">Pick up an apple</span>
+                                <div class="beat-pattern">
+                                    <span class="beat-mark connected">Pick♪up</span>
+                                    <span class="beat-mark connected">an♪apple</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="primary-action">
+                            <button class="listen-btn primary" data-audio-id="linking-melodies">
+                                <span class="btn-icon">🎵</span>
+                                <span class="btn-text">Sing the Links</span>
+                            </button>
+                        </div>
+                        
+                        <div class="secondary-actions">
+                            <button class="harmony-btn" data-target="harmony-3">
+                                <span class="btn-icon">🎶</span>
+                                <span class="btn-text">Harmony</span>
+                            </button>
+                            <button class="compose-btn" data-target="compose-3">
+                                <span class="btn-icon">🎼</span>
+                                <span class="btn-text">Compose</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="rhythm-tools">
+                        <div class="harmony-control" id="harmony-3" hidden>
+                            <div class="linking-patterns">
+                                <div class="pattern-group">
+                                    <span class="pattern-name">Consonant→Vowel</span>
+                                    <span class="pattern-example">turn♪off</span>
+                                </div>
+                                <div class="pattern-group">
+                                    <span class="pattern-name">Vowel→Vowel</span>
+                                    <span class="pattern-example">go♪out</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="compose-exercise" id="compose-3" hidden>
+                            <p>Create your own linking melody:</p>
+                            <div class="compose-zone">
+                                <input type="text" placeholder="Type your phrase..." class="compose-input">
+                                <button class="compose-play">🎵 Play Your Melody</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhythm Pattern 4: Sentence Orchestration -->
+                <div class="learning-card rhythm-card" data-pair="sentence-orchestration" data-item="4">
+                    <div class="card-header">
+                        <div class="card-number">4</div>
+                        <div class="card-title">
+                            <h4>Sentence Orchestration</h4>
+                            <div class="rhythm-pattern">
+                                <span class="beat phrase">phrase 1</span>
+                                <span class="beat pause">♪pause♪</span>
+                                <span class="beat phrase">phrase 2</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="rhythm-display">
+                            <div class="rhythm-example">
+                                <span class="rhythm-text">When I get home, I'll call you</span>
+                                <div class="beat-pattern">
+                                    <span class="beat-mark phrase">When I get HOME</span>
+                                    <span class="beat-mark pause">♪</span>
+                                    <span class="beat-mark phrase">I'll CALL you</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="primary-action">
+                            <button class="listen-btn primary" data-audio-id="sentence-orchestration">
+                                <span class="btn-icon">🎭</span>
+                                <span class="btn-text">Orchestrate</span>
+                            </button>
+                        </div>
+                        
+                        <div class="secondary-actions">
+                            <button class="conductor-btn" data-target="conductor-4">
+                                <span class="btn-icon">🎼</span>
+                                <span class="btn-text">Conduct</span>
+                            </button>
+                            <button class="ensemble-btn" data-target="ensemble-4">
+                                <span class="btn-icon">🎪</span>
+                                <span class="btn-text">Ensemble</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="rhythm-tools">
+                        <div class="conductor-control" id="conductor-4" hidden>
+                            <div class="orchestration-guide">
+                                <div class="phrase-timing">
+                                    <span class="timing-mark">Beat 1-2</span>
+                                    <span class="timing-phrase">When I get HOME</span>
+                                </div>
+                                <div class="phrase-timing">
+                                    <span class="timing-mark">Pause</span>
+                                    <span class="timing-phrase">♪</span>
+                                </div>
+                                <div class="phrase-timing">
+                                    <span class="timing-mark">Beat 3-4</span>
+                                    <span class="timing-phrase">I'll CALL you</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ensemble-exercise" id="ensemble-4" hidden>
+                            <p>Play different parts of the sentence:</p>
+                            <div class="ensemble-parts">
+                                <button class="part-btn" data-part="phrase1">Phrase 1</button>
+                                <button class="part-btn" data-part="pause">Pause</button>
+                                <button class="part-btn" data-part="phrase2">Phrase 2</button>
+                                <button class="part-btn" data-part="full">Full Orchestra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2: MELODY MAKER -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 1 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 2: Melody Maker</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro step2">
+                    <div class="intro-badge melody">🎶 Step 2</div>
+                    <h3>Melody Maker - Compose Your Speech Music</h3>
+                    <p>Create beautiful speech melodies by combining rhythm, intonation, and natural flow</p>
+                </div>
+
+                <!-- Melody Composition Studio -->
+                <div class="melody-composition-studio">
+                    <!-- Melody Exercise 1: Emotion Scales -->
+                    <div class="melody-exercise-card" data-pair="emotion-scales" data-item="1">
+                        <div class="exercise-card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title">
+                                <h4>Emotion Scales</h4>
+                                <p>Compose melodies that express different emotions</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="emotion-scale-exercise">
+                            <div class="phrase-to-compose">
+                                "That's really interesting"
+                            </div>
+                            <div class="emotion-controls">
+                                <button class="emotion-btn" data-emotion="excited" data-audio-id="phrase-excited">
+                                    😃 Excited: That's REALLY interesting!
+                                </button>
+                                <button class="emotion-btn" data-emotion="curious" data-audio-id="phrase-curious">
+                                    🤔 Curious: That's really interesting?
+                                </button>
+                                <button class="emotion-btn" data-emotion="surprised" data-audio-id="phrase-surprised">
+                                    😲 Surprised: That's really interesting...
+                                </button>
+                                <button class="emotion-btn" data-emotion="doubtful" data-audio-id="phrase-doubtful">
+                                    🤨 Doubtful: That's really "interesting"
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Melody Exercise 2: Conversational Harmonies -->
+                    <div class="melody-exercise-card" data-pair="conversational-harmonies" data-item="2">
+                        <div class="exercise-card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title">
+                                <h4>Conversational Harmonies</h4>
+                                <p>Create musical dialogues with natural speech patterns</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="harmony-exercise">
+                            <div class="dialogue-composition">
+                                <div class="dialogue-line">
+                                    <span class="speaker">A:</span>
+                                    <span class="melody-text">"How was your day?"</span>
+                                    <button class="harmony-btn" data-harmony="question">🎵</button>
+                                </div>
+                                <div class="dialogue-line">
+                                    <span class="speaker">B:</span>
+                                    <span class="melody-text">"It was fantastic!"</span>
+                                    <button class="harmony-btn" data-harmony="enthusiasm">🎶</button>
+                                </div>
+                                <button class="duet-btn" data-audio-id="conversational-duet">
+                                    🎭 Play Duet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Melody Exercise 3: Speech Symphony -->
+                    <div class="melody-exercise-card" data-pair="speech-symphony" data-item="3">
+                        <div class="exercise-card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title">
+                                <h4>Speech Symphony</h4>
+                                <p>Conduct your own speech performance with full musical expression</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="symphony-exercise">
+                            <div class="symphony-text">
+                                "Ladies and gentlemen, thank you for joining us today. I'm delighted to share this incredible journey with you."
+                            </div>
+                            <div class="conductor-interface">
+                                <button class="tempo-control" data-tempo="andante">🎼 Andante</button>
+                                <button class="dynamics-control" data-dynamics="crescendo">📈 Crescendo</button>
+                                <button class="expression-control" data-expression="passionate">🔥 Passionate</button>
+                            </div>
+                            <button class="symphony-play" data-audio-id="speech-symphony">
+                                🎭 Perform Symphony
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Melody Exercise 4: Freestyle Composition -->
+                    <div class="melody-exercise-card" data-pair="freestyle-composition" data-item="4">
+                        <div class="exercise-card-header">
+                            <div class="card-number">4</div>
+                            <div class="card-title">
+                                <h4>Freestyle Composition</h4>
+                                <p>Create your own speech melody from scratch</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="freestyle-exercise">
+                            <div class="composition-interface">
+                                <textarea class="composition-input" placeholder="Type your own sentence to turn into a melody..."></textarea>
+                                <div class="composition-tools">
+                                    <select class="mood-selector">
+                                        <option value="">Choose mood...</option>
+                                        <option value="happy">😊 Happy</option>
+                                        <option value="serious">😐 Serious</option>
+                                        <option value="dramatic">🎭 Dramatic</option>
+                                        <option value="gentle">😌 Gentle</option>
+                                    </select>
+                                    <select class="tempo-selector">
+                                        <option value="">Choose tempo...</option>
+                                        <option value="slow">🐌 Slow</option>
+                                        <option value="medium">🚶 Medium</option>
+                                        <option value="fast">🏃 Fast</option>
+                                    </select>
+                                </div>
+                                <button class="compose-melody" data-audio-id="freestyle-melody">
+                                    🎵 Compose & Play
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: LIVE PERFORMANCE -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 2 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 3: Live Performance</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro step3">
+                    <div class="intro-badge performance">🎭 Step 3</div>
+                    <h3>Live Performance - Your Speech Concert</h3>
+                    <p>Take the stage and perform in real-world scenarios with musical speech mastery</p>
+                </div>
+
+                <!-- Live Performance Stages -->
+                <div class="performance-venues">
+                    <!-- Performance 1: Coffee Shop Solo -->
+                    <div class="venue-card" data-venue="coffee-shop" data-item="1">
+                        <div class="venue-header">
+                            <div class="venue-badge">☕ Intimate</div>
+                            <div class="venue-title">
+                                <h4>Coffee Shop Solo</h4>
+                                <p>Intimate acoustic performance</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="venue-content">
+                            <div class="performance-setup">
+                                <div class="stage-direction">
+                                    <span class="setting">🎯 Setting:</span> Cozy coffee shop, small audience
+                                </div>
+                                <div class="performance-piece">
+                                    <span class="piece-title">Your Line:</span>
+                                    "Excuse me, could I have a cappuccino with an extra shot? And maybe one of those delicious-looking pastries?"
+                                </div>
+                                <div class="musical-notes">
+                                    <span class="note">🎵 Style:</span> Gentle, friendly, with natural pauses
+                                </div>
+                            </div>
+                            <button class="performance-audio" data-audio-id="coffee-shop-performance">
+                                <span class="btn-icon">🎤</span>
+                                <span class="btn-text">Perform Solo</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Performance 2: Business Presentation -->
+                    <div class="venue-card" data-venue="business-hall" data-item="2">
+                        <div class="venue-header">
+                            <div class="venue-badge">🏢 Professional</div>
+                            <div class="venue-title">
+                                <h4>Business Presentation</h4>
+                                <p>Corporate concert hall performance</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="venue-content">
+                            <div class="performance-setup">
+                                <div class="stage-direction">
+                                    <span class="setting">🎯 Setting:</span> Corporate boardroom, professional audience
+                                </div>
+                                <div class="performance-piece">
+                                    <span class="piece-title">Your Line:</span>
+                                    "Good morning, everyone. I'd like to present our quarterly results and discuss the exciting opportunities ahead."
+                                </div>
+                                <div class="musical-notes">
+                                    <span class="note">🎵 Style:</span> Confident, clear, with dramatic pauses
+                                </div>
+                            </div>
+                            <button class="performance-audio" data-audio-id="business-presentation">
+                                <span class="btn-icon">🎤</span>
+                                <span class="btn-text">Present with Power</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Performance 3: Grand Theater -->
+                    <div class="venue-card" data-venue="grand-theater" data-item="3">
+                        <div class="venue-header">
+                            <div class="venue-badge">🎭 Theatrical</div>
+                            <div class="venue-title">
+                                <h4>Grand Theater Performance</h4>
+                                <p>Full dramatic stage production</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="venue-content">
+                            <div class="performance-setup">
+                                <div class="stage-direction">
+                                    <span class="setting">🎯 Setting:</span> Grand theater, full audience, spotlight
+                                </div>
+                                <div class="performance-piece">
+                                    <span class="piece-title">Your Monologue:</span>
+                                    "Ladies and gentlemen, tonight I share with you a story that changed my life forever. It began on an ordinary Tuesday, but what happened next was absolutely extraordinary..."
+                                </div>
+                                <div class="musical-notes">
+                                    <span class="note">🎵 Style:</span> Dramatic, expressive, full emotional range
+                                </div>
+                            </div>
+                            <button class="performance-audio" data-audio-id="grand-theater-performance">
+                                <span class="btn-icon">🎤</span>
+                                <span class="btn-text">Take Center Stage</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session 5 Completion -->
+                <div class="session-completion" hidden>
+                    <div class="completion-badge">
+                        <span class="completion-icon">🎭</span>
+                        <span class="completion-text">Speech Symphony Complete!</span>
+                    </div>
+                    <div class="completion-summary">
+                        <p>Bravo! You've mastered the musical art of British English speech performance.</p>
+                        <div class="next-session-prompt">
+                            <p>Ready for your final examination?</p>
+                            <button class="next-session-btn" data-tab="session6">
+                                Continue to Session 6: Final Assessment →
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="session6" class="tab-content" aria-labelledby="Session 6">
-            <div class="exercise-section">
-                <h3>🔄 Session 6: Recap & Quiz</h3>
-                <div class="recap-block">
-                    <h4>Key Takeaways</h4>
-                    <ul>
-                        <li>Review all core British sounds and patterns covered in previous sessions.</li>
-                        <li>Remember to practice regularly for lasting improvement.</li>
-                        <li>Use the quiz below to test your knowledge!</li>
-                    </ul>
+            <div class="learning-container">
+                <!-- Session 6 Progress Header -->
+                <div class="learning-progress session6-progress" hidden>
+                    <div class="progress-header">
+                        <h2>Session 6: Final Assessment</h2>
+                        <div class="progress-stats">
+                            <span class="current-step">Step 1 of 3</span>
+                            <span class="completion-rate">0% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Diagnostic</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Integration</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Mastery</div>
+                            <div class="step-progress">
+                                <div class="progress-dots">
+                                    <span class="dot" data-item="1"></span>
+                                    <span class="dot" data-item="2"></span>
+                                    <span class="dot" data-item="3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="quiz-area">
-                    <h4>Quick Quiz</h4>
-                    <p>1. Which sound is in "cot" but not in "caught"? <input type="text" class="quiz-input" data-answer="ɒ"></p>
-                    <p>2. What is the IPA for "think"? <input type="text" class="quiz-input" data-answer="θɪŋk"></p>
-                    <p>3. Where is the stress in "important"? <input type="text" class="quiz-input" data-answer="im-POR-tant"></p>
-                    <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
-                    <div id="quizResult"></div>
+
+                <!-- STEP 1: DIAGNOSTIC REVIEW -->
+                <div class="learning-intro">
+                    <div class="intro-badge">Step 1</div>
+                    <h3>Comprehensive Review</h3>
+                    <p>Assess your progress and identify areas for continued improvement</p>
                 </div>
-                <div class="practice-reading">
-                    <h4>Practice Reading</h4>
-                    <p>Read aloud: <em>"The quick brown fox jumps over the lazy dog. Every vowel and consonant matters!"</em></p>
+
+                <!-- Diagnostic Assessment 1: Vowel Sound Recognition -->
+                <div class="learning-card" data-pair="vowel-assessment" data-item="1">
+                    <div class="card-header">
+                        <div class="card-number">1</div>
+                        <div class="card-title">
+                            <h4>Vowel Sound Mastery Test</h4>
+                            <div class="phoneme-pair">
+                                <span class="phoneme primary">Listen & Identify</span>
+                                <span class="vs">→</span>
+                                <span class="phoneme secondary">Choose Correct</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="assessment-display">
+                            <div class="assessment-question">
+                                <p><strong>Listen to the audio and choose the correct vowel pair:</strong></p>
+                                <button class="listen-btn assessment" data-audio-id="vowel-assessment-1">
+                                    <span class="btn-icon">🎧</span>
+                                    <span class="btn-text">Play Audio</span>
+                                </button>
+                            </div>
+                            <div class="assessment-options">
+                                <label class="option-label">
+                                    <input type="radio" name="vowel-q1" value="bit-beat" data-correct="true">
+                                    <span>bit / beat</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="vowel-q1" value="cot-caught">
+                                    <span>cot / caught</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="vowel-q1" value="bus-boss">
+                                    <span>bus / boss</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="assessment-feedback" hidden>
+                            <div class="feedback-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diagnostic Assessment 2: Consonant Challenge -->
+                <div class="learning-card" data-pair="consonant-assessment" data-item="2">
+                    <div class="card-header">
+                        <div class="card-number">2</div>
+                        <div class="card-title">
+                            <h4>Consonant Challenge Test</h4>
+                            <div class="phoneme-pair">
+                                <span class="phoneme primary">Real-World Application</span>
+                                <span class="vs">→</span>
+                                <span class="phoneme secondary">Problem Solving</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="assessment-display">
+                            <div class="assessment-scenario">
+                                <p><strong>Scenario:</strong> You're giving directions to a tourist. Which pronunciation would be clearest?</p>
+                                <div class="scenario-context">"Turn right at the red light and go west."</div>
+                            </div>
+                            <div class="assessment-options">
+                                <label class="option-label">
+                                    <input type="radio" name="consonant-q1" value="correct" data-correct="true">
+                                    <span>Clear R, TH, and W sounds</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="consonant-q1" value="r-confusion">
+                                    <span>L/R confusion: "Turn light at the led light"</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="consonant-q1" value="th-confusion">
+                                    <span>TH/F confusion: "Turn right at the red light and go fest"</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="assessment-feedback" hidden>
+                            <div class="feedback-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diagnostic Assessment 3: Integrated Skills -->
+                <div class="learning-card" data-pair="integration-assessment" data-item="3">
+                    <div class="card-header">
+                        <div class="card-number">3</div>
+                        <div class="card-title">
+                            <h4>Integrated Skills Assessment</h4>
+                            <div class="phoneme-pair">
+                                <span class="phoneme primary">All Skills Combined</span>
+                                <span class="vs">→</span>
+                                <span class="phoneme secondary">Natural Speech</span>
+                            </div>
+                        </div>
+                        <div class="completion-status">
+                            <div class="status-icon" data-status="pending">○</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="assessment-display">
+                            <div class="integration-test">
+                                <p><strong>Listen to this business presentation excerpt and identify the pronunciation features:</strong></p>
+                                <button class="listen-btn assessment" data-audio-id="integration-assessment">
+                                    <span class="btn-icon">🎧</span>
+                                    <span class="btn-text">Play Business Excerpt</span>
+                                </button>
+                                <div class="features-checklist">
+                                    <label class="feature-check">
+                                        <input type="checkbox" name="features" value="word-stress">
+                                        <span>Clear word stress patterns</span>
+                                    </label>
+                                    <label class="feature-check">
+                                        <input type="checkbox" name="features" value="intonation">
+                                        <span>Appropriate intonation for questions/statements</span>
+                                    </label>
+                                    <label class="feature-check">
+                                        <input type="checkbox" name="features" value="linking">
+                                        <span>Natural connected speech linking</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="assessment-feedback" hidden>
+                            <div class="feedback-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2: PERSONALIZED PRACTICE -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 1 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 2: Personalized Practice</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro step2">
+                    <div class="intro-badge step2">🎯 Step 2</div>
+                    <h3>Targeted Reinforcement</h3>
+                    <p>Focus on areas identified in your diagnostic assessment</p>
+                </div>
+
+                <!-- Personalized Practice Recommendations -->
+                <div class="interactive-practice-playground">
+                    <!-- Practice Area 1: Weakness-Based Practice -->
+                    <div class="practice-exercise-card" data-pair="weakness-practice" data-item="1">
+                        <div class="exercise-card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title">
+                                <h4>Your Focus Areas</h4>
+                                <p>Based on your assessment, practice these specific skills</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="personalized-practice">
+                            <div class="focus-areas" id="focusAreas">
+                                <!-- Dynamically populated based on assessment results -->
+                                <div class="focus-placeholder">
+                                    Complete the diagnostic assessment to see your personalized practice areas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Area 2: Mixed Skills Challenge -->
+                    <div class="practice-exercise-card" data-pair="mixed-challenge" data-item="2">
+                        <div class="exercise-card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title">
+                                <h4>Mixed Skills Challenge</h4>
+                                <p>Practice all skills together in realistic scenarios</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mixed-challenge">
+                            <div class="challenge-scenarios">
+                                <div class="scenario-option" data-scenario="presentation">
+                                    <h5>📊 Business Presentation</h5>
+                                    <p>Practice professional communication with clear stress, intonation, and linking</p>
+                                    <button class="scenario-btn" data-audio-id="presentation-challenge">
+                                        🎤 Practice Presentation
+                                    </button>
+                                </div>
+                                <div class="scenario-option" data-scenario="social">
+                                    <h5>🍽️ Social Dinner</h5>
+                                    <p>Practice casual conversation with natural flow and appropriate emotion</p>
+                                    <button class="scenario-btn" data-audio-id="social-challenge">
+                                        🗣️ Practice Social Chat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Area 3: Self-Assessment Tools -->
+                    <div class="practice-exercise-card" data-pair="self-assessment" data-item="3">
+                        <div class="exercise-card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title">
+                                <h4>Self-Assessment Tools</h4>
+                                <p>Monitor your own progress and identify areas for improvement</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="self-assessment-tools">
+                            <div class="recording-practice">
+                                <h5>🎙️ Recording Practice</h5>
+                                <p>Record yourself speaking and compare with model audio:</p>
+                                <div class="recording-challenge">
+                                    "It's important to develop comprehensive strategies for economic growth through photography and psychology."
+                                </div>
+                                <button class="model-audio" data-audio-id="model-sentence">
+                                    🔊 Listen to Model
+                                </button>
+                                <div class="self-check">
+                                    <p>After recording yourself, check:</p>
+                                    <ul>
+                                        <li>Word stress on important, develop, comprehensive, strategies, economic, photography, psychology</li>
+                                        <li>Natural linking between words</li>
+                                        <li>Appropriate intonation for statements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: MASTERY VALIDATION -->
+                <div class="step-transition">
+                    <div class="transition-indicator">
+                        <span class="step-complete">✓ Step 2 Complete</span>
+                        <div class="arrow-right">→</div>
+                        <span class="step-next">Step 3: Mastery Validation</span>
+                    </div>
+                </div>
+
+                <div class="learning-intro step3">
+                    <div class="intro-badge step3">🏆 Step 3</div>
+                    <h3>Final Mastery Challenge</h3>
+                    <p>Demonstrate your British English pronunciation skills in comprehensive scenarios</p>
+                </div>
+
+                <!-- Mastery Validation -->
+                <div class="contextual-practice">
+                    <!-- Challenge 1: Professional Context -->
+                    <div class="context-card" data-context="professional-mastery" data-item="1">
+                        <div class="context-header">
+                            <div class="context-badge">💼 Professional</div>
+                            <div class="context-title">
+                                <h4>Executive Presentation</h4>
+                                <p>Deliver complex information with clarity and confidence</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-content">
+                            <div class="mastery-challenge">
+                                <div class="challenge-text">
+                                    "Good morning, everyone. I'd like to present our quarterly results and discuss three important strategies for next year. First, we'll develop our photography division. Second, we need to think through our technology investments. Finally, we should consider opportunities in the west coast market."
+                                </div>
+                                <div class="challenge-requirements">
+                                    <h6>Requirements:</h6>
+                                    <ul>
+                                        <li>Clear word stress on all multi-syllable words</li>
+                                        <li>Professional intonation patterns</li>
+                                        <li>Natural connected speech flow</li>
+                                        <li>Appropriate pace and rhythm</li>
+                                    </ul>
+                                </div>
+                                <button class="mastery-audio" data-audio-id="professional-mastery">
+                                    <span class="btn-icon">🎯</span>
+                                    <span class="btn-text">Practice Executive Delivery</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 2: Social Context -->
+                    <div class="context-card" data-context="social-mastery" data-item="2">
+                        <div class="context-header">
+                            <div class="context-badge">🎭 Social</div>
+                            <div class="context-title">
+                                <h4>Dinner Party Host</h4>
+                                <p>Engage guests with warm, natural conversation</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-content">
+                            <div class="mastery-challenge">
+                                <div class="challenge-text">
+                                    "Welcome, everyone! I'm so excited you could all make it tonight. Sarah, how was your trip to the west coast? And David, I heard you're starting photography classes - that's fantastic! Should we go through to the dining room? I think you'll really enjoy what I've prepared."
+                                </div>
+                                <div class="challenge-requirements">
+                                    <h6>Requirements:</h6>
+                                    <ul>
+                                        <li>Warm, engaging intonation</li>
+                                        <li>Natural conversation flow</li>
+                                        <li>Reduced forms in casual speech</li>
+                                        <li>Emotional expression through tone</li>
+                                    </ul>
+                                </div>
+                                <button class="mastery-audio" data-audio-id="social-mastery">
+                                    <span class="btn-icon">🎯</span>
+                                    <span class="btn-text">Practice Hosting Skills</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 3: Teaching Context -->
+                    <div class="context-card" data-context="teaching-mastery" data-item="3">
+                        <div class="context-header">
+                            <div class="context-badge">🎓 Teaching</div>
+                            <div class="context-title">
+                                <h4>Educational Excellence</h4>
+                                <p>Teach complex concepts with perfect clarity</p>
+                            </div>
+                            <div class="completion-status">
+                                <div class="status-icon" data-status="pending">○</div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-content">
+                            <div class="mastery-challenge">
+                                <div class="challenge-text">
+                                    "Today we're going to explore three important concepts in psychology. First, let's think about how photography can reveal emotional states. Notice how the way we present ourselves in pictures often reflects our inner feelings. What do you think about this connection between visual art and psychological expression?"
+                                </div>
+                                <div class="challenge-requirements">
+                                    <h6>Requirements:</h6>
+                                    <ul>
+                                        <li>Clear instructional delivery</li>
+                                        <li>Engaging question intonation</li>
+                                        <li>Appropriate pace for learning</li>
+                                        <li>Professional yet approachable tone</li>
+                                    </ul>
+                                </div>
+                                <button class="mastery-audio" data-audio-id="teaching-mastery">
+                                    <span class="btn-icon">🎯</span>
+                                    <span class="btn-text">Practice Teaching Excellence</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Completion -->
+                <div class="course-completion">
+                    <div class="completion-certificate">
+                        <div class="certificate-badge">
+                            <span class="certificate-icon">🏆</span>
+                            <span class="certificate-text">British Sounds Mastery</span>
+                        </div>
+                        <div class="completion-summary">
+                            <h4>Congratulations!</h4>
+                            <p>You've completed the comprehensive British English pronunciation course. You've mastered:</p>
+                            <div class="mastery-list">
+                                <div class="mastery-item">✓ Vowel Sound Distinctions</div>
+                                <div class="mastery-item">✓ Consonant Challenge Solutions</div>
+                                <div class="mastery-item">✓ Word Stress Patterns</div>
+                                <div class="mastery-item">✓ Intonation & Melody</div>
+                                <div class="mastery-item">✓ Speech Symphony Performance</div>
+                                <div class="mastery-item">✓ Integrated Communication Skills</div>
+                            </div>
+                            <div class="next-steps">
+                                <h5>Continue Your Journey:</h5>
+                                <p>Keep practicing daily, record yourself regularly, and apply these skills in real conversations. Your British English pronunciation will continue to improve with consistent practice!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
