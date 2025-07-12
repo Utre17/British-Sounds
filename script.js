@@ -109,13 +109,13 @@ audioMap['complete-stress'] = ['complete-stress']; // Complete stress (if file e
 audioMap['butter-stress'] = ['butter-stress']; // Butter stress (if file exists)
 
 // --- Audio mapping for Session 4: Intonation & Emotion ---
-// Step 1: Emotion Wheel - Individual emotions
-audioMap['emotion-happy'] = ['That\'s wonderful news!']; // Happy emotion with rising intonation
-audioMap['emotion-excited'] = ['I can\'t believe it!']; // Excited emotion with high-rise intonation
-audioMap['emotion-curious'] = ['What do you think?']; // Curious emotion with rising intonation
-audioMap['emotion-confident'] = ['I know exactly what to do.']; // Confident emotion with falling intonation
-audioMap['emotion-disappointed'] = ['This isn\'t what I expected.']; // Disappointed emotion with low-fall intonation
-audioMap['emotion-surprised'] = ['Really? That\'s amazing!']; // Surprised emotion with rise-fall intonation
+// Step 1: Emotion Wheel - Direct filename mapping
+audioMap['That\'s wonderful news!'] = ['That\'s wonderful news!'];
+audioMap['I can\'t believe it!'] = ['I can\'t believe it!'];
+audioMap['What do you think'] = ['What do you think'];
+audioMap['I know exactly what to do'] = ['I know exactly what to do'];
+audioMap['emotion-disappointed'] = ['This isn\'t what I expected'];
+audioMap['emotion-surprised'] = ['Really That\'s amazing!'];
 
 // Step 2: Situation Matcher - Context-based audio
 audioMap['situation-job-interview'] = ['I\'m very interested in this position.']; // Confident, professional tone
@@ -223,8 +223,8 @@ function playAudio(audioId, btn) {
         'statement-question', 'wh-questions', 'emotion-attitude',
         'excited-response', 'supportive-response', 'curious-response',
         'business-conversation', 'social-conversation', 'service-conversation',
-        'emotion-happy', 'emotion-excited', 'emotion-curious',
-        'emotion-confident', 'emotion-disappointed', 'emotion-surprised'
+        'That\'s wonderful news!', 'I can\'t believe it!', 'What do you think',
+        'I know exactly what to do', 'This isn\'t what I expected', 'Really That\'s amazing!'
     ];
     const session5Ids = [
         'consonant-vowel-linking', 'vowel-vowel-linking', 'reductions',
@@ -262,6 +262,7 @@ function playAudio(audioId, btn) {
             console.log('Session 3 audio detected:', audioId, word, fileName);
         } else if (session4Ids.includes(audioId) || session4Ids.includes(word)) {
             audioPath = 'audio/session4/';
+            console.log('Session 4 audio detected:', audioId, word, fileName);
         } else if (session5Ids.includes(audioId) || session5Ids.includes(word)) {
             audioPath = 'audio/session5/';
         } else if (session6Ids.includes(audioId) || session6Ids.includes(word)) {
@@ -2078,14 +2079,14 @@ function initializeEmotionWheel() {
             color: '#8b5cf6'
         },
         'disappointed': {
-            sentence: 'That\'s not what I expected.',
+            sentence: 'This isn\'t what I expected.',
             tone: 'low-fall',
             pattern: '↘↘',
             description: 'Low falling tone expresses disappointment',
             color: '#ef4444'
         },
         'surprised': {
-            sentence: 'I didn\'t expect that!',
+            sentence: 'Really? That\'s amazing!',
             tone: 'rise-fall',
             pattern: '↗↘',
             description: 'Rise-fall pattern shows genuine surprise',
@@ -2129,7 +2130,15 @@ function initializeEmotionWheel() {
                 
                 // Update audio button
                 if (emotionAudioBtn) {
-                    emotionAudioBtn.setAttribute('data-audio-id', `emotion-${emotion}`);
+                    const emotionFileMap = {
+                        'happy': 'That\'s wonderful news!',
+                        'excited': 'I can\'t believe it!',
+                        'curious': 'What do you think',
+                        'confident': 'I know exactly what to do',
+                        'disappointed': 'This isn\'t what I expected',
+                        'surprised': 'Really That\'s amazing!'
+                    };
+                    emotionAudioBtn.setAttribute('data-audio-id', emotionFileMap[emotion] || `emotion-${emotion}`);
                     const emotionBtnTextElement = emotionAudioBtn.querySelector('.btn-text');
                     if (emotionBtnTextElement) {
                         emotionBtnTextElement.textContent = `Practice ${emotion.charAt(0).toUpperCase() + emotion.slice(1)} Tone`;
@@ -2698,10 +2707,7 @@ function startStressShifterGame(word, gameElement) {
     });
 }
 
-function initializeSyllableClicking() {
-    const syllableExercises = document.querySelectorAll('.stress-exercise');
-    
-    syllableExercises.forEach(exercise => {
+function initializeSingleStressExercise(exercise) {
         const syllables = exercise.querySelectorAll('.syllable.clickable');
         const feedback = exercise.querySelector('.exercise-feedback');
         const playButton = exercise.querySelector('.play-word-btn');
@@ -2773,7 +2779,14 @@ function initializeSyllableClicking() {
                 }, 150);
             });
         }
+    };
+
+function initializeSyllableClicking() {
+    const syllableExercises = document.querySelectorAll('.stress-exercise');
+    syllableExercises.forEach(exercise => {
+        initializeSingleStressExercise(exercise);
     });
+}
     
     // Initialize expand practice buttons
     const expandButtons = document.querySelectorAll('.expand-practice-btn');
@@ -2787,6 +2800,11 @@ function initializeSyllableClicking() {
                 
                 if (isHidden) {
                     targetElement.removeAttribute('hidden');
+                    // Initialize syllable clicking only for newly revealed words
+                    const newExercises = targetElement.querySelectorAll('.stress-exercise');
+                    newExercises.forEach(exercise => {
+                        initializeSingleStressExercise(exercise);
+                    });
                     const btnTextElement = this.querySelector('.btn-text');
                     const btnIconElement = this.querySelector('.btn-icon');
                     if (btnTextElement) btnTextElement.textContent = 'Show Less';
@@ -2801,7 +2819,6 @@ function initializeSyllableClicking() {
             }
         });
     });
-}
 
 function initializeWordChoices() {
     const wordChoices = document.querySelectorAll('.word-choice');
